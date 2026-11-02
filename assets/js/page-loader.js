@@ -19,6 +19,7 @@
         document.body.removeAttribute('aria-busy');
     }
     function hideLoader() {
+        if (finished) return;
         clearTimeout(fallbackTimer);
         clearTimeout(readyTimer);
         clearTimeout(hideTimer);
@@ -26,6 +27,8 @@
         unlockPage();
         loader.hidden = true;
         loader.setAttribute('aria-hidden', 'true');
+        root.dataset.siteLoaded = 'true';
+        window.dispatchEvent(new Event('academy:page-ready'));
     }
     function dismiss() {
         if (finished || leaving) return;

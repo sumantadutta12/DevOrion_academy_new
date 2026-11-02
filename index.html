@@ -13,7 +13,7 @@
     <!-- #title -->
     <title>DevOrion Academy - Education & Online Course With Community HTML Template</title>
     <!-- #favicon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/fav-1.png" type="image/png">
 
     <!-- ==== css dependencies start ==== -->
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/scroll-reveal.css">
     <link rel="stylesheet" href="assets/css/page-loader.css">
+    <link rel="stylesheet" href="assets/css/enquiry-modal.css">
 </head>
 
 <body class="home-page">
@@ -97,7 +98,7 @@
                         <li><a class="academy-nav__link" href="contact.html">Contact Us</a></li>
                     </ul>
                     <div class="academy-nav__actions">
-                        <a class="academy-nav__enquire" href="contact.html#contact-form">Enquire Now <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+                        <a class="academy-nav__enquire" href="contact.html#contact-form" data-open-enquiry aria-haspopup="dialog" aria-controls="academy-enquiry">Enquire Now <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
                     </div>
                 </div>
             </nav>
@@ -642,19 +643,12 @@
 
 
     <!-- testimonial start -->
-    <section class="testimonial__one pt-120 pb-120" aria-labelledby="testimonials-title" data-scroll-reveal>
+    <section id="student-stories" class="testimonial__one student-voices pt-120 pb-120" aria-labelledby="testimonials-title" data-scroll-reveal>
         <div class="container">
-            <div class="row justify-content-center wow fadeInDown">
-                <div class="col-lg-7">
-                    <div class="sec__titletwo text-center mb-10 mb-xl-15">
-                        <h2 id="testimonials-title" class="two__title section-heading n700-color mb-4 mb-xl-5">
-                            What our customers say
-                        </h2>
-                        <p class="pragraph max61 pragraph m-auto">
-                            We take immense pride in the positive impact our courses and community have on learners' lives.
-                        </p>
-                    </div>
-                </div>
+            <div class="student-voices__heading">
+                <span class="student-voices__eyebrow section-label">Student Voices</span>
+                <h2 id="testimonials-title" class="section-heading">What Our <span>Students Say.</span></h2>
+                <p class="student-voices__description">Every learning journey has a story. Hear from our students about building new skills, exploring ideas, and learning with DevOrion Academy.</p>
             </div>
             <div class="swiper testimonial__onewrap">
                 <div class="swiper-wrapper">
@@ -790,9 +784,9 @@
     <!-- testimonial end -->
 
     <nav class="quick-contact" aria-label="Quick contact">
-        <a class="quick-contact__button quick-contact__button--call" href="tel:+919876543210" aria-label="Call DevOrion Academy at +91 98765 43210" title="Call us"><i class="ti ti-phone-call" aria-hidden="true"></i></a>
+        <a class="quick-contact__button quick-contact__button--call" href="tel:+919046240277" aria-label="Call DevOrion Academy at +91 90462 40277" title="Call us"><i class="ti ti-phone-call" aria-hidden="true"></i></a>
         <span class="quick-contact__divider" aria-hidden="true"></span>
-        <a class="quick-contact__button quick-contact__button--whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="Chat with DevOrion Academy on WhatsApp (opens in a new tab)" title="Chat on WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+        <a class="quick-contact__button quick-contact__button--whatsapp" href="https://wa.me/919046240277" target="_blank" rel="noopener noreferrer" aria-label="Chat with DevOrion Academy on WhatsApp (opens in a new tab)" title="Chat on WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
     </nav>
     <!-- footer Start -->
     <footer class="site-footer">
@@ -831,8 +825,8 @@
                     <section id="contact" class="site-footer__column site-footer__column--contact" aria-labelledby="footer-contact-title">
                         <h2 id="footer-contact-title">Contact</h2>
                         <ul class="site-footer__contacts">
-                            <li><span class="site-footer__contact-icon site-footer__contact-icon--phone"><i class="ti ti-phone-filled" aria-hidden="true"></i></span><a href="tel:+13035550105">(303) 555-0105</a></li>
-                            <li><span class="site-footer__contact-icon site-footer__contact-icon--email"><i class="ti ti-mail-filled" aria-hidden="true"></i></span><div><a href="mailto:info@gmail.com">info@gmail.com</a><a href="mailto:example@gmail.com">example@gmail.com</a></div></li>
+                            <li><span class="site-footer__contact-icon site-footer__contact-icon--phone"><i class="ti ti-phone-filled" aria-hidden="true"></i></span><a href="tel:+919046240277">+91 90462 40277</a></li>
+                            <li><span class="site-footer__contact-icon site-footer__contact-icon--email"><i class="ti ti-mail-filled" aria-hidden="true"></i></span><div><a href="mailto:contact@devorionacademy.com">contact@devorionacademy.com</a></div></li>
                             <li><span class="site-footer__contact-icon site-footer__contact-icon--address"><i class="ti ti-map-pin-filled" aria-hidden="true"></i></span><p>3605 Parker Rd.<br>3890 Poplar Dr.</p></li>
                         </ul>
                     </section>
@@ -862,6 +856,50 @@
     <!-- footer end -->
 
 
+
+    <!-- Course guidance: opens 20 seconds after the loading screen has fully finished. -->
+    <dialog id="academy-enquiry" class="enquiry-modal" aria-labelledby="enquiry-title" aria-describedby="enquiry-description">
+        <button class="enquiry-modal__close" type="button" aria-label="Close course enquiry" autofocus><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+        <div class="enquiry-modal__layout">
+            <aside class="enquiry-story" aria-label="Personal course guidance">
+
+                <span class="enquiry-story__eyebrow"><span aria-hidden="true"></span>YOUR NEXT CHAPTER</span>
+                <h2>Big ambitions.<br><span>A clear next step.</span></h2>
+                <p>You bring the curiosity. We&rsquo;ll help you find the course that turns it into something real.</p>
+                <ul class="enquiry-story__benefits">
+                    <li><span aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="m5 10 3 3 7-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Find a path that fits your goals</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="m5 10 3 3 7-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Explore practical, project-led learning</li>
+                    <li><span aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="m5 10 3 3 7-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Get your questions answered</li>
+                </ul>
+                <div class="enquiry-advisor"><img src="assets/images/contact-page/support-advisor.jpg" alt="A course advisor ready to help" width="76" height="76" loading="lazy" decoding="async"><div><span>A little guidance goes a long way.</span><strong>Let&rsquo;s build your next move.</strong></div></div>
+                <span class="enquiry-story__foot">From Campus To Corporate <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 17 17 5M5 5h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </aside>
+            <section class="enquiry-panel">
+                <div class="enquiry-panel__heading"><span class="enquiry-kicker">FREE COURSE GUIDANCE</span><h2 id="enquiry-title">Find your right fit<span>.</span></h2><p id="enquiry-description">Tell us a little about yourself. Let&rsquo;s find a learning path that feels right for you.</p></div>
+                <form id="academy-enquiry-form" class="enquiry-form" action="mailto:contact@devorionacademy.com" method="post" enctype="text/plain" aria-describedby="enquiry-handoff-note">
+                    <div class="enquiry-form__grid">
+                        <div class="enquiry-field"><label for="enquiry-name">Full name <span aria-hidden="true">*</span></label><input id="enquiry-name" name="student_name" type="text" placeholder="Your full name" autocomplete="name" maxlength="100" required></div>
+                        <div class="enquiry-field"><label for="enquiry-phone">Mobile number <span aria-hidden="true">*</span></label><input id="enquiry-phone" name="mobile" type="tel" placeholder="e.g. +91 90462 40277" autocomplete="tel" inputmode="tel" maxlength="24" required aria-describedby="enquiry-phone-help"><small id="enquiry-phone-help">Include your country code.</small></div>
+                        <div class="enquiry-field enquiry-field--full"><label for="enquiry-course">What would you love to learn? <span aria-hidden="true">*</span></label><div class="enquiry-select"><select data-native-select id="enquiry-course" name="course" required><option value="" disabled selected>Choose a course or let us help you decide</option><option>Software Development</option><option>Full Stack Web Development</option><option>UI/UX Design with Figma</option><option>Python Programming</option><option>Web Design</option><option>React Development</option><option>AI &amp; Emerging Technology</option><option>Not sure yet &mdash; help me choose</option></select><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m6 8 4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+                        <div class="enquiry-field enquiry-field--full"><label for="enquiry-email">Email address <span class="enquiry-optional">Optional</span></label><input id="enquiry-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254"></div>
+                        <div class="enquiry-field"><label for="enquiry-stage">Where are you now? <span class="enquiry-optional">Optional</span></label><div class="enquiry-select"><select data-native-select id="enquiry-stage" name="learner_stage"><option value="">Select your current stage</option><option>School student</option><option>College student</option><option>Recent graduate</option><option>Working professional</option><option>Exploring a career change</option></select><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m6 8 4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+                        <div class="enquiry-field"><label for="enquiry-start">When would you like to start? <span class="enquiry-optional">Optional</span></label><div class="enquiry-select"><select data-native-select id="enquiry-start" name="start_when"><option value="">Choose a timeline</option><option>As soon as possible</option><option>Within a month</option><option>In 1&ndash;3 months</option><option>Just exploring for now</option></select><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m6 8 4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+                    </div>
+                    <label class="enquiry-consent" for="enquiry-consent"><input id="enquiry-consent" name="contact_consent" type="checkbox" required><span>I agree to be contacted by DevOrion Academy about my course enquiry.</span></label>
+                    <button class="enquiry-submit" type="submit"><span>Continue on WhatsApp</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <p id="enquiry-handoff-note" class="enquiry-note"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="5" y="8" width="10" height="9" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M7 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Review and send your enquiry in WhatsApp. No payment required.</p>
+                </form>
+                <div id="enquiry-result" class="enquiry-result" role="status" aria-live="polite" hidden>
+                    <span class="enquiry-result__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="m8 16 5 5 11-11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <h3>One small step to your next chapter.</h3><p>Your enquiry draft is ready. Review it in WhatsApp and tap <strong>Send</strong> to reach our team.</p>
+                    <a id="enquiry-whatsapp-link" class="enquiry-submit" href="https://wa.me/919046240277" target="_blank" rel="noopener noreferrer">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <button class="enquiry-result__edit" type="button">Edit my details</button>
+                </div>
+                <button class="enquiry-later" type="button">I&rsquo;ll explore a little more first</button>
+            </section>
+        </div>
+    </dialog>
+
     <!-- ==== js dependencies start ==== -->
     <script src="assets/js/plugins/plugins.js"></script>
     <script src="assets/js/plugins/slick.min.js"></script>
@@ -873,6 +911,7 @@
     <script src="assets/js/banner-slider.js"></script>
     <script src="assets/js/featured-courses.js"></script>
     <script src="assets/js/scroll-reveal.js"></script>
+    <script src="assets/js/enquiry-modal.js"></script>
 
 </body>
 

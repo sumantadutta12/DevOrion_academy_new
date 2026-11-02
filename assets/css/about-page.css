@@ -113,19 +113,42 @@
 .about-career h2 { margin: 0 0 14px; color: #fff; }
 .about-career p { max-width: 46ch; margin: 0 0 20px; color: #fff0e6; font-size: 14px; line-height: 1.65; }
 .about-career .about-button { border-color: #fff; background: #fff; box-shadow: 0 5px 12px rgb(101 34 6 / 10%); color: #e56523; }
-.about-faq-section { padding: var(--about-section-gap) 0 56px; scroll-margin-top: 120px; }
-.about-faq-section__heading { margin-bottom: 26px; text-align: center; }
-.about-faq-section__heading h2 { margin: 0; }
-.about-faq-section__heading .about-eyebrow { margin-bottom: 10px; }
-.about-faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 12px 20px; }
-.about-faq { overflow: hidden; border: 1px solid #e1e7f2; border-radius: 10px; background: #fff; }
-.about-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 54px; padding: 14px 18px; color: #465d83; font-size: 14px; font-weight: 500; line-height: 1.5; list-style: none; cursor: pointer; }
+/* A single, calm FAQ column with numbered questions and clear open states. */
+.about-faq-section { position: relative; isolation: isolate; max-width: 1120px; margin-top: var(--about-section-gap); margin-bottom: 56px; padding: 48px 64px 32px; border: 1px solid #e7ecf5; border-radius: 30px; background: radial-gradient(ellipse at 100% 0, #eef3ff 0, transparent 46%), radial-gradient(ellipse at 0 100%, #fff5ec 0, transparent 36%), #f9fafc; box-shadow: 0 18px 50px rgb(25 47 91 / 4%), inset 0 1px 0 #fff; scroll-margin-top: 120px; }
+.about-faq-section__heading { max-width: 720px; margin: 0 auto 32px; text-align: center; }
+.about-faq-section__heading .about-eyebrow { gap: 8px; margin-bottom: 16px; padding: 6px 13px; border: 1px solid #e0e7f2; border-radius: 999px; background: rgb(255 255 255 / 85%); color: #63728e; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; }
+.about-faq-section__heading .about-eyebrow::before { width: 6px; height: 6px; border-radius: 50%; background: #ff702d; box-shadow: 0 0 0 3px #fff0e6; }
+.academy-about .about-faq-section__heading h2 { margin: 0 0 14px; font-size: clamp(27px, 2.7vw, 38px); line-height: 1.18; letter-spacing: -.045em; }
+.academy-about .about-faq-section__heading .about-faq-section__dot { color: #ff6828; }
+.about-faq-section__heading > p { max-width: 52ch; margin: 0 auto; color: #748097; font-size: 14px; line-height: 1.7; }
+.about-faq-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 13px; }
+.about-faq { min-width: 0; overflow: hidden; border: 1px solid #e3e8f1; border-radius: 17px; background: #fff; box-shadow: 0 3px 8px rgb(26 45 82 / 2%); transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+.about-faq summary { display: grid; grid-template-columns: 34px minmax(0, 1fr) 32px; align-items: center; gap: 17px; min-height: 80px; padding: 21px 24px; color: #1e3154; font-family: inherit; font-size: 16px; font-weight: 600; line-height: 1.5; list-style: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .about-faq summary::-webkit-details-marker { display: none; }
 .about-faq summary::marker { content: ''; }
-.about-faq summary > i { flex: 0 0 auto; color: #617ba7; font-size: 19px; transition: transform 180ms ease; }
-.about-faq[open] { border-color: #cbdafa; background: #fcfdff; }
-.about-faq[open] summary > i { transform: rotate(45deg); }
-.about-faq p { margin: 0; padding: 0 18px 18px; color: #7c8ba4; font-size: 13px; line-height: 1.7; }
+.about-faq summary:focus-visible { outline: 2px solid #3972cc; outline-offset: -5px; border-radius: 16px; }
+.about-faq__number { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #e8edf6; border-radius: 10px; background: #f7f9fc; color: #8a98b0; font-size: 11px; font-weight: 600; letter-spacing: .03em; transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease; }
+.about-faq__question { text-wrap: pretty; }
+.about-faq__toggle { position: relative; display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #e8edf5; border-radius: 50%; background: #f9fbff; transition: background-color 200ms ease, border-color 200ms ease; }
+.about-faq__toggle::before, .about-faq__toggle::after { position: absolute; width: 11px; height: 1.5px; border-radius: 2px; background: #6e83a7; content: ''; transition: transform 200ms ease, background-color 200ms ease; }
+.about-faq__toggle::after { transform: rotate(90deg); }
+.about-faq[open] { border-color: #f0cbb5; background: linear-gradient(115deg, #fffdfa, #fff 74%); box-shadow: 0 7px 22px rgb(79 54 26 / 5%), inset 3px 0 0 #ff803b; }
+.about-faq[open] .about-faq__number { border-color: #ffe0c9; background: #fff1e6; color: #dd6a29; }
+.about-faq[open] .about-faq__toggle { border-color: #ffe0c9; background: #fff0e4; }
+.about-faq[open] .about-faq__toggle::before, .about-faq[open] .about-faq__toggle::after { background: #e5702e; }
+.about-faq[open] .about-faq__toggle::after { transform: rotate(0deg); }
+.about-faq__answer { padding: 0 76px 24px 75px; }
+.about-faq__answer > p { max-width: 72ch; margin: 0; padding: 0; color: #6c7990; font-size: 14px; line-height: 1.8; }
+.about-faq-support { display: flex; align-items: center; gap: 15px; margin-top: 27px; padding: 24px 3px 0; border-top: 1px solid #e5eaf2; }
+.about-faq-support__icon { display: grid; flex: 0 0 auto; place-items: center; width: 42px; height: 42px; border: 1px solid #e4eaf6; border-radius: 13px; background: #fff; color: #6482b9; }
+.about-faq-support__icon > svg { width: 23px; height: 23px; }
+.academy-about .about-faq-support h3 { margin: 0 0 3px; color: #263b5f; font-size: 14px; font-weight: 600 !important; letter-spacing: -.015em; }
+.about-faq-support p { margin: 0; color: #8590a3; font-size: 12px; line-height: 1.6; }
+.about-faq-support__link { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 13px; min-height: 41px; margin-left: auto; padding: 9px 17px; border: 1px solid #dce4f1; border-radius: 11px; background: #fff; box-shadow: 0 2px 4px rgb(30 55 95 / 3%); color: #284b83; font-size: 12px; font-weight: 600; line-height: 1.5; transition: border-color 200ms ease, box-shadow 200ms ease; }
+.about-faq-support__link > svg { width: 17px; height: 17px; }
+.about-faq-support__link:hover { border-color: #b8c9e6; box-shadow: 0 4px 10px rgb(30 55 95 / 7%); color: #1f57a7; }
+@media (hover: hover) { .about-faq:not([open]):hover { border-color: #bdcde7; box-shadow: 0 5px 16px rgb(35 64 110 / 5%); } }
+@media (max-width: 991px) { .about-faq-section { padding: 38px 32px 29px; } }
 @media (max-width: 1199px) {
     .about-page { --about-title-size: 40px; --about-heading-size: 28px; --about-section-gap: 48px; }
     .about-hero { padding-top: 118px; }
@@ -215,9 +238,22 @@
     .about-career__copy { padding: 20px 24px 28px; }
     .about-career::before { top: 25px; }
     .about-career::after { right: 8px; bottom: 15px; opacity: .5; }
-    .about-faq-section { padding-bottom: 40px; }
-    .about-faq-grid { grid-template-columns: 1fr; gap: 12px; }
-    .about-faq summary { font-size: 13px; }
+    .about-faq-section { margin-bottom: 32px; padding: 30px 16px 22px; border-radius: 23px; }
+    .about-faq-section__heading { margin-bottom: 24px; }
+    .about-faq-section__heading > p { max-width: 34ch; font-size: 12px; }
+    .about-faq-grid { gap: 11px; }
+    .about-faq { border-radius: 14px; }
+    .about-faq summary { grid-template-columns: 28px minmax(0, 1fr) 28px; gap: 11px; min-height: 74px; padding: 17px 14px; font-size: 13px; }
+    .about-faq__number { width: 28px; height: 28px; border-radius: 8px; font-size: 10px; }
+    .about-faq__toggle { width: 28px; height: 28px; }
+    .about-faq__answer { padding: 0 18px 21px 53px; }
+    .about-faq__answer > p { font-size: 12px; line-height: 1.8; }
+    .about-faq-support { flex-wrap: wrap; gap: 11px; margin-top: 22px; padding-top: 20px; }
+    .about-faq-support__icon { width: 35px; height: 35px; border-radius: 10px; }
+    .about-faq-support > div { flex: 1; min-width: 0; }
+    .academy-about .about-faq-support h3 { font-size: 13px; }
+    .about-faq-support p { font-size: 11px; }
+    .about-faq-support__link { margin: 3px 0 0 46px; font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) {
     .academy-about *, .academy-about *::before, .academy-about *::after { transition: none !important; }

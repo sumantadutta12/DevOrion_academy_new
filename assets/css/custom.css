@@ -103,7 +103,7 @@
 .benefit-card--access .benefit-card__glyph { color: #dd8900; }
 .benefit-card--certificate .benefit-card__glyph { color: #2488d5; }
 .benefit-card__copy { position: absolute; top: 18.2%; left: 35%; right: 4%; }
-.benefit-card h3 { margin: 0 0 .45em; color: var(--benefit-title); font-size: 7.2cqw; font-weight: 700 !important; line-height: 1.16; letter-spacing: -.04em; text-transform: none; }
+.benefit-card h3 { margin: 0 0 .45em; color: var(--benefit-title); font-size: 6.5cqw; font-weight: 700 !important; line-height: 1.16; letter-spacing: -.04em; text-transform: none; }
 .benefit-card h3 > span { color: var(--benefit-heading); font-size: inherit; font-weight: inherit; line-height: inherit; letter-spacing: inherit; }
 .benefit-card p { margin: 0; color: #6c7079; font-size: 4.5cqw; line-height: 1.4; font-weight: 500; letter-spacing: -.02em; }
 .benefit-card__arrow { position: absolute; right: 6%; bottom: 11%; display: grid; place-items: center; width: 14.2%; aspect-ratio: 1; border: 1px solid rgb(var(--benefit-rgb) / 8%); border-radius: 50%; background: #fff; color: var(--benefit-accent); box-shadow: 0 3px 8px rgb(var(--benefit-rgb) / 7%); transition: color 200ms ease, transform 200ms ease; }
@@ -135,3 +135,18 @@
 .testimonial__onewrap .swiper-slide { height: auto; }
 .testimonial__onewrap .testi__oneitem { height: 100%; }
 .testimonial__onewrap .slider-btn:has(.swiper-button-lock) { display: none !important; }
+
+/* Student voices: the same label, title scale and blue accent as the homepage sections. */
+.student-voices { position: relative; isolation: isolate; scroll-margin-top: 116px; background: radial-gradient(ellipse at 50% 0, #f2f7ff, transparent 48%), #fff; }
+.student-voices__heading { max-width: 780px; margin: 0 auto 42px; text-align: center; }
+.student-voices__eyebrow { display: inline-flex; align-items: center; gap: 19px; margin: 0 0 18px; color: #627b9b; }
+.student-voices__eyebrow::before { flex: 0 0 auto; width: 48px; height: 3px; border-radius: 99px; background: #0758ff; content: ''; }
+.home-page .student-voices__heading .section-heading { margin: 0; color: #102343; }
+.home-page .student-voices__heading .section-heading > span { color: #126aff; }
+.student-voices__description { max-width: 59ch; margin: 17px auto 0; color: #64758d; font-size: 15px; font-weight: 400; line-height: 1.75; }
+@media (max-width: 575px) {
+    .student-voices__heading { margin-bottom: 28px; }
+    .student-voices__eyebrow { gap: 13px; margin-bottom: 15px; }
+    .student-voices__eyebrow::before { width: 35px; }
+    .student-voices__description { margin-top: 14px; font-size: 13px; }
+}

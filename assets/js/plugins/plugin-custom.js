@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(function ($) {
 
         /* niceSelect */
-        $("select").niceSelect();
+        $("select").not("[data-native-select]").niceSelect();
 
         // common slide one
         let commonSlide1 = document.querySelectorAll('.testimonial__onewrap');

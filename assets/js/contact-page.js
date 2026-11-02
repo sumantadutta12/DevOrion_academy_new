@@ -27,7 +27,7 @@
     var draftLink = document.getElementById('contact-draft-link');
     var copyButton = document.getElementById('contact-copy-message');
     var currentMessage = '';
-    var recipient = 'info@devorionacademy.com';
+    var recipient = 'contact@devorionacademy.com';
 
     document.querySelectorAll('[data-enquiry]').forEach(function (button) {
         button.addEventListener('click', function (event) {

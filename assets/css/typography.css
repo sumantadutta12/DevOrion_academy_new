@@ -1,11 +1,12 @@
-/* One type scale for the homepage's section headings and section labels. */
-.home-page {
+/* Shared type scale for the home and Student Projects section headings and labels. */
+.home-page, .projects-page {
     --section-heading-font: var(--body-font, "Inter", sans-serif);
     --section-heading-size: 48px;
     --section-label-size: 14px;
 }
 
-.home-page .section-heading {
+.home-page .section-heading,
+.projects-page .academy-projects .section-heading {
     font-family: var(--section-heading-font);
     font-size: var(--section-heading-size);
     font-style: normal;
@@ -15,7 +16,8 @@
     text-transform: none;
 }
 
-.home-page .section-heading :is(span, em) {
+.home-page .section-heading :is(span, em),
+.projects-page .academy-projects .section-heading :is(span, em) {
     font-family: inherit;
     font-size: inherit;
     font-style: inherit;
@@ -24,7 +26,8 @@
     letter-spacing: inherit;
 }
 
-.home-page .section-label {
+.home-page .section-label,
+.projects-page .academy-projects .section-label {
     font-family: var(--section-heading-font);
     font-size: var(--section-label-size);
     font-weight: 600;
@@ -34,11 +37,11 @@
 }
 
 @media (max-width: 1199px) {
-    .home-page { --section-heading-size: 40px; }
+    .home-page, .projects-page { --section-heading-size: 40px; }
 }
 
 @media (max-width: 575px) {
-    .home-page {
+    .home-page, .projects-page {
         --section-heading-size: 32px;
         --section-label-size: 12px;
     }

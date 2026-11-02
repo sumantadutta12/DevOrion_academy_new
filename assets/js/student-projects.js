@@ -14,6 +14,25 @@
     });
     updateChrome();
 
+    var intro = document.getElementById('projects-intro');
+    var introOpener = document.querySelector('[data-open-intro]');
+    if (intro && introOpener && typeof intro.showModal === 'function') {
+        var introOverflow = '';
+        introOpener.addEventListener('click', function () {
+            introOverflow = document.documentElement.style.overflow;
+            document.documentElement.style.overflow = 'hidden';
+            intro.showModal();
+        });
+        intro.querySelector('.projects-dialog__close').addEventListener('click', function () { intro.close(); });
+        intro.querySelector('[data-close-intro]').addEventListener('click', function () { intro.close(); });
+        intro.addEventListener('click', function (event) {
+            if (event.target !== intro) return;
+            var bounds = intro.getBoundingClientRect();
+            if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) intro.close();
+        });
+        intro.addEventListener('close', function () { document.documentElement.style.overflow = introOverflow; });
+    }
+
     var grid = document.getElementById('project-grid');
     if (!grid) return;
     var cards = Array.from(grid.querySelectorAll('.project-card'));
@@ -76,7 +95,8 @@
     function openProject(id, opener) {
         var card = document.getElementById('project-' + id);
         if (!card) return false;
-        var art = card.querySelector('.project-preview');
+        var preview = card.querySelector('.project-detail-preview');
+        var art = preview ? preview.content.querySelector('.project-preview') : card.querySelector('.project-preview');
         var tech = card.querySelector('.project-tech');
         var brief = card.querySelector('.project-brief');
         if (!art || !tech || !brief) return false;

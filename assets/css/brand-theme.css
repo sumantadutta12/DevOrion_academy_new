@@ -1,0 +1,175 @@
+/* Devorion Academy: colors sampled from logo-dev.webp. */
+:root {
+    --brand-blue: #2c68bc;
+    --brand-blue-dark: #204f90;
+    --brand-blue-deep: #193d6b;
+    --brand-orange: #ff3b00;
+    --brand-orange-dark: #bf3d18;
+    --brand-orange-light: #ffb79c;
+    --brand-navy: #162b49;
+    --brand-ink: #243750;
+    --brand-slate: #4d5870;
+    --brand-muted: #68788e;
+    --brand-subtle: #7e8da1;
+    --brand-surface: #f5f8fd;
+    --brand-surface-blue: #edf4ff;
+    --brand-surface-warm: #fff4ed;
+    --brand-line: #dce5f2;
+    --brand-line-warm: #f1d9cb;
+    --brand-white: #fff;
+
+    /* Shared tokens used by the original template. */
+    --p1: var(--brand-orange);
+    --p1-border: rgb(255 59 0 / 24%);
+    --s1: #e96635;
+    --s2: var(--brand-blue);
+    --s3: var(--brand-orange-dark);
+    --n1: var(--brand-navy);
+    --n2: 36, 55, 80;
+    --n20: var(--brand-surface);
+    --n30: #e8eef6;
+    --n40: var(--brand-line);
+    --n400: #56677f;
+    --n500: var(--brand-slate);
+    --n600: #344862;
+    --n700: var(--brand-ink);
+    --n800: var(--brand-navy);
+    --n900: var(--brand-blue-deep);
+    --bg1: var(--brand-navy);
+    --bg2: #213a5d;
+    --header: rgb(44 104 188 / 7%);
+    --gradient-p1: linear-gradient(100deg, rgb(44 104 188 / 8%), rgb(255 59 0 / 5%));
+    --box-shadow: 0 5px 25px rgb(22 43 73 / 8%);
+    --sbox-shadow-p1: 0 6px 30px rgb(22 43 73 / 8%);
+    accent-color: var(--brand-blue);
+}
+
+body { color: var(--brand-ink); }
+::selection { background: #d8e8ff; color: var(--brand-navy); }
+.header-section .one__header,
+.header-section .one__header.header-fixed { background: var(--brand-white); }
+.header-section .one__header .main-navbar .custom-nav :is(a, button) { color: var(--brand-navy); }
+.header-section .one__header .main-navbar .custom-nav :is(a, button):is(:hover, :focus-visible, .active) { color: var(--brand-blue-dark); }
+.header-section .main-navbar .navbar-toggle-btn span { background: var(--brand-navy); }
+.header-section .main-navbar .custom-nav .sub-menu { border-color: var(--brand-orange); background: var(--brand-white) !important; }
+@media (max-width: 991px) {
+    .header-section .one__header .itembg__1 { background: var(--brand-surface); }
+}
+.scrollToTop { background: var(--brand-blue); color: #fff; }
+.scrollToTop i { color: #fff; }
+
+/* Shared template accents, including SVG icons and the older course sections. */
+.srgba, .dbg-clr1, .ins__relatedbox1 { background: #ffe7dc; }
+.edu-border { border-color: rgb(44 104 188 / 14%); }
+.ser7-bg, .lbg { background: var(--brand-surface-blue) !important; }
+.sucbadge { color: var(--brand-blue) !important; border-color: var(--brand-blue); }
+.online-courseitem-v2 { background: var(--brand-surface-blue); }
+.linked-infoactive { border-color: var(--brand-blue) !important; background: var(--brand-surface-blue) !important; }
+svg [fill="#2FA75F"], svg [fill="#2fa75f"] { fill: var(--brand-blue); }
+svg [fill="#FFC700"], svg [fill="#DFFF5E"] { fill: var(--brand-orange); }
+.cmn-btn:not(.second-alt) > span,
+.cmn-btn:not(.second-alt) > i { color: var(--brand-navy) !important; }
+.cmn-btn.second-alt { color: var(--brand-blue) !important; }
+.cmn-btn.second-alt::before { border-color: var(--brand-blue); }
+.cmn-btn.second-alt:hover > span,
+.cmn-btn.second-alt:hover > i { color: #fff !important; }
+
+/* About, testimonials, and the original promotional blocks. */
+.testimonial__onewrap .testi__oneitem { background: var(--brand-surface); }
+.testimonial__onewrap .testi__oneitem:hover { box-shadow: inset 3px 3px 6px #d5e2f1, inset -3px -3px 6px #fff; }
+.testimonial__onewrap .testi__oneitem .quote { background: #edf3fc; }
+.testimonial__onewrap .testi__oneitem .quote i { color: var(--brand-blue); }
+.testimonial__onewrap .testi__oneitem:hover .quote { background: var(--brand-orange); }
+.testimonial__onewrap .testi__oneitem:hover .quote i { color: #fff; }
+
+/* Featured course cards and their local syllabus dialogs. */
+.featured-learning { background: #fff; color: var(--brand-ink); }
+.featured-learning__eyebrow { color: var(--brand-blue); }
+.featured-learning__intro h2 { color: var(--brand-navy); }
+.featured-learning__intro h2 em { color: var(--brand-blue); }
+.featured-learning__intro > p { color: var(--brand-muted); }
+.course-filters { border-color: var(--brand-line); background: var(--brand-surface); }
+.course-filter { color: var(--brand-muted); }
+.course-filter[aria-pressed="true"] { border-color: var(--brand-blue); background: var(--brand-blue); box-shadow: 0 3px 8px rgb(44 104 188 / 10%); }
+.course-filter[aria-pressed="false"]:hover { background: #e2edfc; color: var(--brand-blue-dark); }
+.featured-course { --course-accent: var(--brand-blue); --course-tint: var(--brand-surface-blue); border-color: var(--brand-line); box-shadow: 0 4px 10px rgb(22 43 73 / 3%); }
+.featured-course--web { --course-accent: #245d9c; --course-tint: #eff5ff; }
+.featured-course--ux { --course-accent: #b74925; --course-tint: #fff0e8; }
+.featured-course--python { --course-accent: #b64b21; --course-tint: #fff3e9; }
+.featured-course--design { --course-accent: #a94c2b; --course-tint: #fff2ec; }
+.featured-course--react { --course-accent: #326fb4; --course-tint: #edf5ff; }
+.featured-course h3 { color: var(--brand-ink); }
+.featured-course__description { color: var(--brand-muted); }
+.featured-course__level { border-color: var(--brand-line); background: var(--brand-surface); color: #5f728e; }
+.featured-course__skills > span { border-color: #e2e9f4; background: #f8faff; color: #5b7190; }
+.featured-course__footer { border-color: #e7eef8; }
+.featured-course__format { color: #71829a; }
+.featured-course__format > i { color: var(--brand-blue); }
+.course-syllabus-button { color: var(--brand-blue-dark); }
+.course-syllabus-button > i { border-color: var(--brand-line); background: var(--brand-surface-blue); }
+.course-syllabus-button:hover { color: var(--course-accent); }
+.featured-learning button:focus-visible { outline-color: var(--brand-blue); }
+.course-cover { background: #deebfc; }
+.course-editor { background: #1b3150; box-shadow: 0 10px 22px rgb(22 43 73 / 15%); }
+.course-window-bar { color: #a8bddb; }
+.course-window-dots > b { background: #f79a76; }
+.course-window-dots > b:nth-child(2) { background: #aac9f3; }
+.course-window-dots > b:nth-child(3) { background: #6d94c7; }
+.course-editor pre { color: #d4e4fb; }
+.course-editor .code-keyword { color: #ffb597; }
+.course-editor .code-value { color: #9ccaff; }
+.course-editor .code-string { color: #c2dafe; }
+.course-editor .code-comment { color: #91a9cb; }
+.course-cover__symbol { color: rgb(170 204 255 / 10%); }
+.featured-course--web .course-cover { background: #e5effe; }
+.course-browser { border-color: #ccdff7; box-shadow: 0 10px 22px rgb(44 104 188 / 10%); }
+.course-browser .course-window-bar { border-color: #e5edf9; color: #7793b8; }
+.course-browser__sidebar > span { background: #e4edfb; }
+.course-browser__sidebar > span:first-child { background: #a6c3eb; }
+.course-browser__headline { background: #6d9bd4; }
+.course-browser__line { background: #dce9fa; }
+.course-browser__tiles > span { border-color: #dce7f8; background: #f0f6ff; }
+.course-browser__tiles > span:nth-child(2) { background: #e1edfd; }
+.course-cover__tech { border-color: #e5effe; background: var(--brand-blue); }
+.featured-course--ux .course-cover { background: #fff0e7; }
+.course-figma > i { color: var(--brand-orange); }
+.course-figma__board { border-color: #f3d8c8; background: #fffcf9; box-shadow: 0 10px 18px rgb(255 59 0 / 6%); }
+.course-figma__cursor { border-color: #fff0e7; background: var(--brand-orange-dark); }
+.course-figma__swatches > span { background: #ffab88; }
+.course-figma__swatches > span:nth-child(2) { background: var(--brand-blue); }
+.course-figma__swatches > span:nth-child(3) { background: #c6d9f5; }
+.course-figma__board > strong { color: var(--brand-navy); }
+.course-figma__button { background: var(--brand-orange); }
+.featured-course--python .course-cover { background: #fff0e5; }
+.featured-course--python .course-editor { background: #263855; }
+.featured-course--python .course-cover__symbol { color: rgb(255 174 134 / 12%); }
+.featured-course--python .code-keyword { color: #ffb597; }
+.featured-course--python .code-string { color: #c2dafe; }
+.featured-course--design .course-cover { background: #fff1e9; }
+.course-design__grid { background-image: linear-gradient(rgb(44 104 188 / 5%) 1px, transparent 1px), linear-gradient(90deg, rgb(44 104 188 / 5%) 1px, transparent 1px); }
+.course-design__page { border-color: #f0d9ca; background: #fffdfa; box-shadow: 0 9px 20px rgb(22 43 73 / 7%); }
+.course-design__page > span { color: var(--brand-orange-dark); }
+.course-design__page > strong { color: var(--brand-navy); }
+.course-design__page em { color: var(--brand-orange-dark); }
+.course-design__lines > span { background: #e0e9f7; }
+.course-design__page > i { color: var(--brand-blue); }
+.course-design__palette > span { border-color: #fff1e9; background: var(--brand-orange); }
+.course-design__palette > span:nth-child(2) { background: var(--brand-blue); }
+.course-design__palette > span:nth-child(3) { background: #7ca6dd; }
+.course-design__palette > span:nth-child(4) { background: #ffc3a5; }
+.featured-course--react .course-cover { background: #183e6a; }
+.course-react > i { color: #a1c9ff; }
+.course-react__orbit { border-color: rgb(155 198 255 / 23%); }
+.course-react__chip, .course-react__tag { border-color: #4b72a3; background: #234e80; color: #c8ddfa; }
+.course-dialog { border-color: var(--brand-line); color: var(--brand-ink); box-shadow: 0 24px 90px rgb(22 43 73 / 25%); }
+.course-dialog::backdrop { background: rgb(15 31 54 / 58%); }
+.course-dialog__close { border-color: var(--brand-line); background: var(--brand-surface); color: var(--brand-blue-dark); }
+.course-dialog h2 { color: var(--brand-navy); }
+.course-dialog__description, .course-dialog__topics { color: var(--brand-muted); }
+.course-dialog h3 { color: var(--brand-ink); }
+.course-dialog__project > strong { color: var(--brand-ink); }
+
+/* Course hover shadows complement the theme base colors. */
+@media (hover: hover) {
+    .featured-course:hover { border-color: var(--course-accent); box-shadow: 0 15px 32px rgb(22 43 73 / 9%); }
+}

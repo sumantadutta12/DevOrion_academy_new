@@ -1,0 +1,13 @@
+/* Home sections stay visible until JavaScript enables a subtle, one-time reveal. */
+.home-reveal {
+    opacity: 1;
+    transform: none;
+    transition: opacity 560ms ease, transform 560ms cubic-bezier(.2, .65, .3, 1);
+}
+.home-reveal.is-reveal-pending { opacity: 0; transform: translateY(18px); }
+@media (prefers-reduced-motion: reduce) {
+    .home-reveal, .home-reveal.is-reveal-pending { opacity: 1; transform: none; transition: none; }
+}
+@media print {
+    .home-reveal, .home-reveal.is-reveal-pending { opacity: 1; transform: none; transition: none; }
+}

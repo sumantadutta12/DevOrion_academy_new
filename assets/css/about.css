@@ -1,0 +1,144 @@
+/* About: an organic photo composition and a clear mission and vision. */
+.about-edufast { position: relative; isolation: isolate; padding: 76px 0 88px; overflow: hidden; background: #fff; }
+.about-edufast::before { position: absolute; z-index: -1; bottom: 0; left: 0; width: 54%; height: 80%; background: radial-gradient(ellipse at 50% 65%, #f0f6ff, transparent 70%); content: ''; pointer-events: none; }
+.about-edufast__layout { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 72px; width: 90%; max-width: 1480px; margin: 0 auto; }
+.about-edufast__visual { position: relative; width: 100%; max-width: 720px; padding: 44px 26px 30px; }
+.about-edufast__backdrop { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.about-edufast__dots { position: absolute; top: 3%; left: 0; width: 92px; height: 102px; background-image: radial-gradient(circle, #8bb5ff 1.8px, transparent 2.2px); background-size: 16px 16px; opacity: .6; }
+.about-edufast__photo { position: relative; z-index: 1; width: 100%; aspect-ratio: 1.04; overflow: hidden; border: 2px solid rgb(255 255 255 / 65%); border-radius: 105px 118px 110px 130px; background: #edf4ff; }
+.about-edufast__photo > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 46%; }
+.about-edufast__idea { position: absolute; z-index: 3; top: 3%; left: 12%; display: grid; place-items: center; width: 82px; height: 82px; border: 1px solid rgb(255 255 255 / 25%); border-radius: 50%; background: linear-gradient(145deg, #188aff, #0754f5); box-shadow: 0 0 0 12px rgb(229 240 255 / 85%), 0 10px 24px rgb(11 92 255 / 18%); color: #fff; }
+.about-edufast__idea > i { color: inherit; font-size: 43px; }
+.about-metric { position: absolute; z-index: 4; display: flex; align-items: center; gap: 14px; padding: 16px 18px; border: 1px solid #fff; border-radius: 24px; background: rgb(255 255 255 / 98%); box-shadow: 0 12px 34px rgb(57 102 183 / 12%); }
+.about-metric--reviews { top: 0; right: -1%; }
+.about-metric--offer { bottom: 16%; left: -2%; }
+.about-metric__icon { display: grid; place-items: center; flex: 0 0 auto; width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(140deg, #ffcb00, #ffb400); color: #fff; }
+.about-metric__icon > i { color: inherit; font-size: 28px; }
+.about-metric--offer .about-metric__icon { background: linear-gradient(140deg, #823cff, #6520ee); }
+.about-metric strong { display: block; margin-bottom: 3px; color: #112748; font-size: 20px; font-weight: 700; line-height: 1.3; letter-spacing: -.5px; }
+.about-metric strong > span { color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; }
+.about-metric p { margin: 0; color: #465d7b; font-size: 14px; font-weight: 400; line-height: 1.5; white-space: nowrap; }
+.about-satisfaction { position: absolute; z-index: 4; right: -1%; bottom: 0; width: 218px; padding: 13px 17px 19px; border: 1px solid #fff; border-radius: 25px; background: #fff; box-shadow: 0 12px 34px rgb(57 102 183 / 12%); text-align: center; }
+.about-satisfaction__gauge { position: relative; width: 100%; margin-bottom: 1px; }
+.about-satisfaction__gauge > svg { display: block; width: 100%; height: auto; }
+.about-satisfaction__gauge > img { position: absolute; bottom: 14%; left: 50%; width: 36px; height: 36px; object-fit: contain; transform: translateX(-50%); }
+.about-satisfaction__gauge > span { position: absolute; top: 0; right: -5px; padding: 4px 7px; border-radius: 6px; background: #ff4b08; color: #fff; font-size: 12px; font-weight: 500; line-height: 1.4; }
+.about-satisfaction__gauge > span::after { position: absolute; bottom: -4px; left: 7px; width: 8px; height: 8px; background: #ff4b08; transform: rotate(45deg); content: ''; }
+.about-satisfaction > strong { display: block; margin-bottom: 4px; color: #112748; font-size: 20px; font-weight: 700; line-height: 1.3; letter-spacing: -.4px; }
+.about-satisfaction > p { margin: 0; color: #465d7b; font-size: 13px; font-weight: 400; line-height: 1.5; }
+.about-edufast__content { min-width: 0; max-width: 640px; }
+.about-edufast__eyebrow { display: inline-flex; align-items: center; gap: 19px; margin-bottom: 19px; color: #396fbd; font-size: 11px; font-weight: 500; line-height: 1.5; letter-spacing: 1.7px; text-transform: uppercase; }
+.about-edufast__eyebrow::before { flex-shrink: 0; width: 48px; height: 3px; border-radius: 99px; background: #0758ff; content: ''; }
+.about-edufast__heading { position: relative; }
+.about-edufast .about-edufast__title { margin: 0 0 26px; color: #102343; font-size: clamp(37px, 3.65vw, 62px); font-weight: 700; line-height: 1.14; letter-spacing: -.045em; text-transform: none; }
+.about-edufast__title > span { position: relative; display: inline-block; color: #126aff; font-family: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; }
+.about-edufast__title > span > svg { position: absolute; right: 2%; bottom: -.18em; width: 94%; height: .27em; overflow: visible; }
+.about-edufast__spark { position: absolute; top: -17px; right: 2%; width: 28px; height: 32px; transform: rotate(15deg); }
+.about-edufast__spark::before, .about-edufast__spark::after { position: absolute; width: 5px; height: 18px; border-radius: 4px; background: #ff5c1a; content: ''; }
+.about-edufast__spark::before { top: 0; left: 0; }
+.about-edufast__spark::after { right: 0; bottom: 0; transform: rotate(55deg); }
+.about-edufast__intro { margin: 0 0 29px; color: #64758d; font-size: 15px; font-weight: 400; line-height: 1.75; }
+.about-edufast__list { display: grid; gap: 24px; margin: 0 0 31px; padding: 0; list-style: none; }
+.about-edufast__list > li { display: grid; grid-template-columns: 72px minmax(0, 1fr); align-items: start; gap: 22px; margin: 0; }
+.about-edufast__icon { display: grid; place-items: center; width: 72px; height: 74px; border-radius: 22px; background: #edf4ff; color: #126aff; }
+.about-edufast__icon > svg { width: 39px; height: 39px; }
+.about-edufast__icon--vision { background: #fff0e8; color: #ff5a16; }
+.about-edufast__list h3 { margin: 4px 0 7px; color: #102343; font-size: 19px; font-weight: 700; line-height: 1.3; letter-spacing: -.5px; }
+.about-edufast__list p { margin: 0; color: #64758d; font-size: 13px; font-weight: 400; line-height: 1.7; }
+.about-edufast__link { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 56px; padding: 6px 7px 6px 23px; border: 1px solid #0b65ff; border-radius: 999px; background: linear-gradient(110deg, #126aff, #0755ff); box-shadow: 0 8px 20px rgb(11 101 255 / 12%); color: #fff; font-size: 15px; font-weight: 500; line-height: 1.5; list-style: none; cursor: pointer; transition: box-shadow 180ms ease, transform 180ms ease; }
+.about-edufast__link::-webkit-details-marker { display: none; }
+.about-edufast__link::marker { content: ''; }
+.about-edufast__link > span { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #fff; color: #126aff; }
+.about-edufast__link i { color: inherit; font-size: 23px; transition: transform 180ms ease; }
+.about-edufast__link:hover { transform: translateY(-2px); box-shadow: 0 11px 24px rgb(11 101 255 / 21%); color: #fff; }
+.about-edufast__more[open] .about-edufast__link i { transform: rotate(90deg); }
+.about-edufast__details { margin-top: 17px; padding: 18px 20px; border: 1px solid #e0eaff; border-radius: 16px; background: #f7faff; }
+.about-edufast__details > p { margin: 0 0 12px; color: #526983; font-size: 13px; line-height: 1.7; }
+.about-edufast__details > a { display: inline-flex; align-items: center; gap: 8px; color: #1459c6; font-size: 13px; font-weight: 600; line-height: 1.5; }
+.about-edufast :is(a, summary):focus-visible { outline: 3px solid #126aff; outline-offset: 5px; }
+
+@media (max-width: 1199px) {
+    .about-edufast { padding: 60px 0 72px; }
+    .about-edufast__layout { gap: 42px; }
+    .about-edufast__visual { padding: 37px 18px 25px; }
+    .about-edufast__photo { border-radius: 75px 88px 84px 95px; }
+    .about-edufast__idea { width: 64px; height: 64px; box-shadow: 0 0 0 10px rgb(229 240 255 / 85%), 0 8px 20px rgb(11 92 255 / 15%); }
+    .about-edufast__idea > i { font-size: 35px; }
+    .about-metric { gap: 10px; padding: 12px 14px; border-radius: 19px; }
+    .about-metric__icon { width: 43px; height: 43px; }
+    .about-metric__icon > i { font-size: 24px; }
+    .about-metric strong { font-size: 16px; }
+    .about-metric p { font-size: 11px; }
+    .about-satisfaction { width: 177px; padding: 11px 13px 15px; border-radius: 20px; }
+    .about-satisfaction > strong { font-size: 17px; }
+    .about-satisfaction > p { font-size: 11px; }
+    .about-satisfaction__gauge > img { width: 29px; height: 29px; }
+    .about-satisfaction__gauge > span { font-size: 10px; }
+    .about-edufast .about-edufast__title { font-size: 40px; }
+    .about-edufast__intro { font-size: 14px; }
+    .about-edufast__list { gap: 21px; }
+    .about-edufast__list > li { grid-template-columns: 60px minmax(0, 1fr); gap: 17px; }
+    .about-edufast__icon { width: 60px; height: 62px; border-radius: 18px; }
+    .about-edufast__icon > svg { width: 33px; height: 33px; }
+    .about-edufast__list h3 { font-size: 17px; }
+    .about-edufast__list p { font-size: 12px; }
+}
+
+@media (max-width: 991px) {
+    .about-edufast { padding: 48px 0 60px; }
+    .about-edufast__layout { grid-template-columns: 1fr; gap: 50px; }
+    .about-edufast__visual { max-width: 600px; margin: 0 auto; padding: 42px 24px 30px; }
+    .about-edufast__content { width: 100%; max-width: 680px; margin: 0 auto; }
+    .about-edufast .about-edufast__title { font-size: clamp(38px, 5.8vw, 49px); }
+    .about-edufast__list p { font-size: 13px; }
+    .about-metric { gap: 13px; padding: 14px 17px; }
+    .about-metric strong { font-size: 19px; }
+    .about-metric p { font-size: 13px; }
+    .about-metric__icon { width: 50px; height: 50px; }
+    .about-satisfaction { width: 195px; padding: 12px 16px 17px; }
+    .about-satisfaction > strong { font-size: 19px; }
+    .about-satisfaction > p { font-size: 12px; }
+}
+
+@media (max-width: 767px) {
+    .about-edufast__eyebrow { gap: 13px; }
+    .about-edufast__eyebrow::before { width: 35px; }
+}
+
+@media (max-width: 575px) {
+    .about-edufast { padding: 38px 0 48px; }
+    .about-edufast__layout { width: calc(100% - 40px); gap: 39px; }
+    .about-edufast__visual { padding: 34px 12px 23px; }
+    .about-edufast__photo { border-radius: 56px 66px 64px 76px; }
+    .about-edufast__dots { width: 70px; height: 76px; background-size: 13px 13px; }
+    .about-edufast__idea { top: 3%; left: 10%; width: 52px; height: 52px; box-shadow: 0 0 0 9px rgb(229 240 255 / 85%), 0 8px 18px rgb(11 92 255 / 14%); }
+    .about-edufast__idea > i { font-size: 29px; }
+    .about-metric { gap: 8px; padding: 10px 11px; border-radius: 16px; }
+    .about-metric strong { font-size: 14px; }
+    .about-metric p { font-size: 10px; }
+    .about-metric__icon { width: 36px; height: 36px; }
+    .about-metric__icon > i { font-size: 21px; }
+    .about-metric--reviews { right: -1%; }
+    .about-metric--offer { bottom: 15%; left: -2%; }
+    .about-satisfaction { right: -1%; width: 148px; padding: 8px 10px 12px; border-radius: 18px; }
+    .about-satisfaction > strong { font-size: 16px; }
+    .about-satisfaction > p { font-size: 10px; }
+    .about-satisfaction__gauge > img { width: 26px; height: 26px; }
+    .about-satisfaction__gauge > span { padding: 3px 5px; font-size: 9px; }
+    .about-edufast__eyebrow { margin-bottom: 15px; font-size: 10px; }
+    .about-edufast .about-edufast__title { margin-bottom: 24px; font-size: clamp(32px, 8vw, 42px); }
+    .about-edufast__spark { top: -13px; right: 0; transform: scale(.8) rotate(15deg); }
+    .about-edufast__intro { margin-bottom: 24px; font-size: 13px; }
+    .about-edufast__list { gap: 22px; margin-bottom: 27px; }
+    .about-edufast__list > li { grid-template-columns: 53px minmax(0, 1fr); gap: 14px; }
+    .about-edufast__icon { width: 53px; height: 56px; border-radius: 16px; }
+    .about-edufast__icon > svg { width: 31px; height: 31px; }
+    .about-edufast__list h3 { margin-top: 2px; font-size: 17px; }
+    .about-edufast__list p { font-size: 12px; }
+    .about-edufast__link { gap: 24px; min-height: 52px; padding-left: 20px; font-size: 14px; }
+    .about-edufast__link > span { width: 38px; height: 38px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-edufast *, .about-edufast *::after { transition: none !important; }
+}

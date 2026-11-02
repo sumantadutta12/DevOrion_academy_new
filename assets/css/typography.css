@@ -1,0 +1,45 @@
+/* One type scale for the homepage's section headings and section labels. */
+.home-page {
+    --section-heading-font: var(--body-font, "Inter", sans-serif);
+    --section-heading-size: 48px;
+    --section-label-size: 14px;
+}
+
+.home-page .section-heading {
+    font-family: var(--section-heading-font);
+    font-size: var(--section-heading-size);
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 1.16;
+    letter-spacing: -.04em;
+    text-transform: none;
+}
+
+.home-page .section-heading :is(span, em) {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
+.home-page .section-label {
+    font-family: var(--section-heading-font);
+    font-size: var(--section-label-size);
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+    .home-page { --section-heading-size: 40px; }
+}
+
+@media (max-width: 575px) {
+    .home-page {
+        --section-heading-size: 32px;
+        --section-label-size: 12px;
+    }
+}

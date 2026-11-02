@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- required meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #keywords -->
+    <meta name="keywords" content="boot, Bootstrap, Edufast University & School Management HTML Template">
+    <!-- #description -->
+    <meta name="description" content="Edufast University & School Management HTML Template">
+    <!-- #title -->
+    <title>DevOrion Academy - Education & Online Course With Community HTML Template</title>
+    <!-- #favicon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/brand-theme.css">
+    <link rel="stylesheet" href="assets/css/featured-courses.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/categories.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/course-finder.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/quick-contact.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/scroll-reveal.css">
+    <link rel="stylesheet" href="assets/css/page-loader.css">
+</head>
+
+<body class="home-page">
+
+    <!-- Shared page loader -->
+    <div id="site-loader" class="site-loader" role="status" aria-live="polite" hidden>
+        <div class="site-loader__content">
+            <div class="site-loader__visual" aria-hidden="true"><span class="site-loader__orbit"></span><span class="site-loader__mark"><svg viewBox="0 0 64 64" fill="none"><path d="M22 19 9 32l13 13M42 19l13 13-13 13" stroke="#e8f2ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="m37 14-10 36" stroke="#ff9b61" stroke-width="4" stroke-linecap="round"/></svg></span></div>
+            <span class="site-loader__brand">Devorion <span>Academy</span></span>
+            <span class="site-loader__tagline">From Campus To Corporate</span>
+            <div class="site-loader__progress" aria-hidden="true"></div>
+            <span class="site-loader__status">Preparing your learning experience</span>
+        </div>
+    </div>
+    <script src="assets/js/page-loader.js"></script>
+
+
+    <noscript><style>.course-filters, .course-syllabus-button { display: none !important; }</style></noscript>
+
+
+    <!-- Scroll To Top Start-->
+    <button type="button" class="scrollToTop d-center" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 14 6-6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section header-scrollfixed academy-header">
+        <div class="one__header academy-header__bar">
+            <nav class="academy-nav" aria-label="Main navigation">
+                <a href="index.html" class="header-logo" aria-label="Devorion Academy home">
+                    <img src="assets/images/logo-dev1.png" alt="Devorion Academy" width="641" height="366">
+                </a>
+                <button class="academy-nav__toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="academy-primary-menu">
+                    <svg class="academy-nav__menu-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <svg class="academy-nav__close-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div id="academy-primary-menu" class="academy-nav__content">
+                    <ul class="academy-nav__links">
+                        <li><a class="academy-nav__link" href="index.html" aria-current="page">Home</a></li>
+                        <li><a class="academy-nav__link" href="about.html">About Us</a></li>
+                        <li>
+                            <details class="academy-nav__dropdown">
+                                <summary class="academy-nav__link">Courses <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+                                <ul class="academy-nav__submenu">
+                                    <li><a href="#courses">Explore All Courses</a></li>
+                                    <li><a href="#course-software">Software Development</a></li>
+                                    <li><a href="#course-web">Web Development</a></li>
+                                    <li><a href="#course-ux">UI/UX Design</a></li>
+                                    <li><a href="#course-python">Python Programming</a></li>
+                                    <li><a href="#course-design">Web Design</a></li>
+                                    <li><a href="#course-react">React Development</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details class="academy-nav__dropdown">
+                                <summary class="academy-nav__link">Career Support <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+                                <ul class="academy-nav__submenu">
+                                    <li><a href="#learning-paths">Find Your Learning Path</a></li>
+                                    <li><a href="contact.html#contact-form">Speak to an Advisor</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a class="academy-nav__link" href="student-projects.html">Student Projects</a></li>
+                        <li><a class="academy-nav__link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="academy-nav__actions">
+                        <a class="academy-nav__enquire" href="contact.html#contact-form">Enquire Now <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header-section end -->
+
+    <!-- hero section start -->
+    <section class="premium-banner" aria-label="Discover learning at Devorion Academy" aria-roledescription="carousel">
+        <div class="hero-slider">
+            <article class="hero-slide hero-slide--learn" aria-label="1 of 3">
+                <div class="hero-visual"><img class="hero-photo" src="assets/images/banner/banner-1.png" alt="Students collaborating on a laptop with software and design graphics in a bright academy classroom" width="1829" height="860" fetchpriority="high"></div>
+                <svg class="hero-ribbon" viewBox="0 0 1600 650" preserveAspectRatio="none" aria-hidden="true">
+                    <defs><linearGradient id="hero-ribbon-learn" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd7a0" stop-opacity=".35"/><stop offset="1" stop-color="#ff8b1e"/></linearGradient></defs>
+                    <path d="M1080 100C1170 16 1210-23 1290-45L1360-45C1230 24 1173 85 1080 100Z" fill="url(#hero-ribbon-learn)"/>
+                    <path d="M580 500C760 482 787 612 982 650H885C779 589 763 539 580 500Z" fill="url(#hero-ribbon-learn)"/>
+                    <path d="M1475 224C1575 273 1612 326 1640 416V490C1590 362 1549 298 1475 224Z" fill="url(#hero-ribbon-learn)"/>
+                </svg>
+                <div class="hero-slide__layout">
+                    <div class="hero-copy">
+                        <span class="hero-eyebrow section-label"><span></span>Better together. Further together.</span>
+                        <h1 class="hero-title section-heading">Learn Today.<br>Build Your <em>Tomorrow.</em></h1>
+                        <p class="hero-description">Practical, industry-focused courses in Software Development, Web Development, UI/UX Design and more &mdash; with expert guidance, real projects and career support.</p>
+                        <div class="hero-actions">
+                            <a class="hero-button" href="#courses">Explore Our Courses<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+                            <a class="hero-secondary-button" href="#learning-paths"><i class="ti ti-compass" aria-hidden="true"></i>Find Your Path</a>
+                        </div>
+                        <div class="hero-paths" aria-label="Explore learning paths">
+                            <a class="hero-path" href="#course-software"><span class="hero-path__icon hero-path__icon--code"><i class="ti ti-code" aria-hidden="true"></i></span><span>Software<br>Development</span></a>
+                            <a class="hero-path" href="#course-web"><span class="hero-path__icon hero-path__icon--web"><i class="ti ti-device-desktop" aria-hidden="true"></i></span><span>Web<br>Development</span></a>
+                            <a class="hero-path" href="#course-ux"><span class="hero-path__icon hero-path__icon--design"><i class="ti ti-pencil" aria-hidden="true"></i></span><span>UI/UX<br>Design</span></a>
+                            <a class="hero-path" href="#learning-paths"><span class="hero-path__icon hero-path__icon--mobile"><i class="ti ti-device-mobile" aria-hidden="true"></i></span><span>Mobile App<br>Development</span></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="hero-slide hero-slide--connect" aria-label="2 of 3">
+                <div class="hero-visual"><img class="hero-photo" src="assets/images/banner/bn10-thumb.png" alt="Students sharing ideas and learning together on campus" width="838" height="1000" loading="lazy"></div>
+                <svg class="hero-ribbon" viewBox="0 0 1600 650" preserveAspectRatio="none" aria-hidden="true">
+                    <defs><linearGradient id="hero-ribbon-connect" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd7a0" stop-opacity=".35"/><stop offset="1" stop-color="#ff8b1e"/></linearGradient></defs>
+                    <path d="M1080 100C1170 16 1210-23 1290-45L1360-45C1230 24 1173 85 1080 100Z" fill="url(#hero-ribbon-connect)"/>
+                    <path d="M580 500C760 482 787 612 982 650H885C779 589 763 539 580 500Z" fill="url(#hero-ribbon-connect)"/>
+                    <path d="M1475 224C1575 273 1612 326 1640 416V490C1590 362 1549 298 1475 224Z" fill="url(#hero-ribbon-connect)"/>
+                </svg>
+                <div class="hero-slide__layout">
+                    <div class="hero-copy">
+                        <span class="hero-eyebrow section-label"><span></span>Learn together. Create something great.</span>
+                        <h2 class="hero-title section-heading">Real Skills.<br>Build Real <em>Projects.</em></h2>
+                        <p class="hero-description">Move from learning the basics to building something of your own. Explore practical courses, connect with other learners and put your new skills into practice.</p>
+                        <div class="hero-actions">
+                            <a class="hero-button" href="#courses">Explore Practical Courses<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+                            <a class="hero-secondary-button" href="#learning-paths"><i class="ti ti-compass" aria-hidden="true"></i>Find Your Path</a>
+                        </div>
+                        <div class="hero-paths" aria-label="Explore learning paths">
+                            <a class="hero-path" href="#course-software"><span class="hero-path__icon hero-path__icon--code"><i class="ti ti-code" aria-hidden="true"></i></span><span>Software<br>Development</span></a>
+                            <a class="hero-path" href="#course-web"><span class="hero-path__icon hero-path__icon--web"><i class="ti ti-device-desktop" aria-hidden="true"></i></span><span>Web<br>Development</span></a>
+                            <a class="hero-path" href="#course-ux"><span class="hero-path__icon hero-path__icon--design"><i class="ti ti-pencil" aria-hidden="true"></i></span><span>UI/UX<br>Design</span></a>
+                            <a class="hero-path" href="#learning-paths"><span class="hero-path__icon hero-path__icon--mobile"><i class="ti ti-device-mobile" aria-hidden="true"></i></span><span>Mobile App<br>Development</span></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="hero-slide hero-slide--achieve" aria-label="3 of 3">
+                <div class="hero-visual"><img class="hero-photo" src="assets/images/banner/bn3.png" alt="A learner studying online with headphones and a notebook" width="416" height="613" loading="lazy"></div>
+                <svg class="hero-ribbon" viewBox="0 0 1600 650" preserveAspectRatio="none" aria-hidden="true">
+                    <defs><linearGradient id="hero-ribbon-achieve" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd7a0" stop-opacity=".35"/><stop offset="1" stop-color="#ff8b1e"/></linearGradient></defs>
+                    <path d="M1080 100C1170 16 1210-23 1290-45L1360-45C1230 24 1173 85 1080 100Z" fill="url(#hero-ribbon-achieve)"/>
+                    <path d="M580 500C760 482 787 612 982 650H885C779 589 763 539 580 500Z" fill="url(#hero-ribbon-achieve)"/>
+                    <path d="M1475 224C1575 273 1612 326 1640 416V490C1590 362 1549 298 1475 224Z" fill="url(#hero-ribbon-achieve)"/>
+                </svg>
+                <div class="hero-slide__layout">
+                    <div class="hero-copy">
+                        <span class="hero-eyebrow section-label"><span></span>From campus to corporate.</span>
+                        <h2 class="hero-title section-heading">Your Ambition.<br>Your Next <em>Chapter.</em></h2>
+                        <p class="hero-description">Make progress at your own pace with expert-led learning in development and design. Build your confidence, strengthen your portfolio and take your next step.</p>
+                        <div class="hero-actions">
+                            <a class="hero-button" href="#courses">Find Your Next Course<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+                            <a class="hero-secondary-button" href="#learning-paths"><i class="ti ti-compass" aria-hidden="true"></i>Find Your Path</a>
+                        </div>
+                        <div class="hero-paths" aria-label="Explore learning paths">
+                            <a class="hero-path" href="#course-software"><span class="hero-path__icon hero-path__icon--code"><i class="ti ti-code" aria-hidden="true"></i></span><span>Software<br>Development</span></a>
+                            <a class="hero-path" href="#course-web"><span class="hero-path__icon hero-path__icon--web"><i class="ti ti-device-desktop" aria-hidden="true"></i></span><span>Web<br>Development</span></a>
+                            <a class="hero-path" href="#course-ux"><span class="hero-path__icon hero-path__icon--design"><i class="ti ti-pencil" aria-hidden="true"></i></span><span>UI/UX<br>Design</span></a>
+                            <a class="hero-path" href="#learning-paths"><span class="hero-path__icon hero-path__icon--mobile"><i class="ti ti-device-mobile" aria-hidden="true"></i></span><span>Mobile App<br>Development</span></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="hero-controls" hidden>
+            <button class="hero-arrow hero-prev" type="button" aria-label="Previous banner slide"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>
+            <button class="hero-arrow hero-next" type="button" aria-label="Next banner slide"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+            <div class="hero-controls__bottom">
+                <div class="hero-dots" aria-label="Choose a banner slide"></div>
+                <button class="hero-pause" type="button" aria-label="Pause banner autoplay" aria-pressed="false"><i class="ti ti-player-pause" aria-hidden="true"></i></button>
+                <span class="hero-counter" aria-live="off"><span class="hero-current">01</span> / <span class="hero-total">03</span></span>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- learning benefits start -->
+    <section class="learning-benefits" aria-label="Why learn with Edufast" data-scroll-reveal>
+        <div class="container">
+            <ul class="learning-benefits__grid">
+                <li class="benefit-card benefit-card--courses">
+                    <svg class="benefit-card__waves" viewBox="0 0 500 280" preserveAspectRatio="none" aria-hidden="true"><path d="M150 280C217 243 259 281 325 251S436 187 500 147V280Z"/><path d="M155 280C226 249 271 287 337 251S440 216 500 178V280Z"/></svg>
+                    <span class="benefit-card__dots" aria-hidden="true"></span>
+                    <span class="benefit-card__icon" aria-hidden="true">
+                        <svg class="benefit-card__glyph" viewBox="0 0 64 64" fill="none"><path d="M32 18C23 12 15 12 8 15V49C16 46 24 47 32 52C40 47 48 46 56 49V15C49 12 41 12 32 18Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M32 18V51M43 23L49 22M43 29L49 28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                    </span>
+                    <div class="benefit-card__copy">
+                        <h3><span>30,000+</span><br>online courses</h3>
+                        <p>Explore a world of<br>fresh topics.</p>
+                    </div>
+                    <a class="benefit-card__arrow" href="#courses" aria-label="Explore online courses"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </li>
+                <li class="benefit-card benefit-card--experts">
+                    <svg class="benefit-card__waves" viewBox="0 0 500 280" preserveAspectRatio="none" aria-hidden="true"><path d="M150 280C217 243 259 281 325 251S436 187 500 147V280Z"/><path d="M155 280C226 249 271 287 337 251S440 216 500 178V280Z"/></svg>
+                    <span class="benefit-card__dots" aria-hidden="true"></span>
+                    <span class="benefit-card__icon" aria-hidden="true">
+                        <svg class="benefit-card__glyph" viewBox="0 0 64 64" fill="none"><path d="M15 29V44C25 53 39 53 49 44V29" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M3 23L32 10L61 23L32 37Z" fill="currentColor" fill-opacity=".26" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M60 24V42" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M14 22L32 14L49 22L32 30Z" fill="white" fill-opacity=".5"/></svg>
+                    </span>
+                    <div class="benefit-card__copy">
+                        <h3><span>Expert</span><br>instruction</h3>
+                        <p>Learn from people<br>who know.</p>
+                    </div>
+                    <a class="benefit-card__arrow" href="#courses" aria-label="Explore expert-led courses"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </li>
+                <li class="benefit-card benefit-card--access">
+                    <svg class="benefit-card__waves" viewBox="0 0 500 280" preserveAspectRatio="none" aria-hidden="true"><path d="M150 280C217 243 259 281 325 251S436 187 500 147V280Z"/><path d="M155 280C226 249 271 287 337 251S440 216 500 178V280Z"/></svg>
+                    <span class="benefit-card__dots" aria-hidden="true"></span>
+                    <span class="benefit-card__icon" aria-hidden="true">
+                        <svg class="benefit-card__glyph" viewBox="0 0 64 64" fill="none"><path d="M32 32C25 20 22 18 16 18C8 18 3 24 3 32S8 46 16 46C22 46 26 41 32 32C38 23 42 18 48 18C56 18 61 24 61 32S56 46 48 46C42 46 39 44 32 32Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <div class="benefit-card__copy">
+                        <h3><span>Lifetime</span><br>access</h3>
+                        <p>Your learning,<br>on your schedule.</p>
+                    </div>
+                    <a class="benefit-card__arrow" href="#courses" aria-label="Explore courses with lifetime access"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </li>
+                <li class="benefit-card benefit-card--certificate">
+                    <svg class="benefit-card__waves" viewBox="0 0 500 280" preserveAspectRatio="none" aria-hidden="true"><path d="M150 280C217 243 259 281 325 251S436 187 500 147V280Z"/><path d="M155 280C226 249 271 287 337 251S440 216 500 178V280Z"/></svg>
+                    <span class="benefit-card__dots" aria-hidden="true"></span>
+                    <span class="benefit-card__icon" aria-hidden="true">
+                        <svg class="benefit-card__glyph" viewBox="0 0 64 64" fill="none"><rect x="6" y="8" width="51" height="40" rx="5" fill="currentColor" fill-opacity=".19" stroke="currentColor" stroke-width="5"/><path d="M15 18H47M15 26H30M15 34H24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><path d="M33 42L30 59L40 53L49 59L47 42" fill="currentColor"/><circle cx="40" cy="37" r="11" fill="currentColor"/><circle cx="40" cy="37" r="6" stroke="white" stroke-opacity=".75" stroke-width="2.5"/></svg>
+                    </span>
+                    <div class="benefit-card__copy">
+                        <h3><span>Earn a</span><br>certificate</h3>
+                        <p>Show the skills<br>you’ve earned.</p>
+                    </div>
+                    <a class="benefit-card__arrow" href="#courses" aria-label="Explore certificate courses"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- learning benefits end -->
+
+    <!-- online courses start -->
+    <section id="learning-paths" class="coding-categories" aria-labelledby="categories-title" data-scroll-reveal>
+        <div class="container">
+            <div class="coding-categories__heading">
+                <div class="coding-categories__intro">
+                    <span class="coding-categories__eyebrow section-label">Browse categories</span>
+                    <h2 id="categories-title" class="section-heading">Build skills.<br>Create <em>what&rsquo;s next.</em></h2>
+                    <p>From your first line of code to your next big launch.<br class="coding-categories__desktop-break"> Find your path to design, build, and grow.</p>
+                </div>
+                <div class="coding-categories__actions">
+                    <a class="coding-categories__browse" href="#courses">Explore all courses<span aria-hidden="true"><i class="ti ti-arrow-right"></i></span></a>
+                    <a class="coding-categories__path-link" href="#category-grid"><i class="ti ti-route" aria-hidden="true"></i>Find your learning path</a>
+                </div>
+            </div>
+            <div id="category-grid" class="coding-categories__grid">
+                <a class="coding-category coding-category--software" href="software-development.html" aria-label="Explore Software Development courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-code" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">01</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Code &amp; create</span>
+                        <h3>Software<br>Development</h3>
+                        <p>Build the logic behind great software.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">Java / C++ / C#</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--web" href="#courses" aria-label="Explore Web Development courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-world-code" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">02</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Build for the web</span>
+                        <h3>Web<br>Development</h3>
+                        <p>Bring fast, modern web experiences to life.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">HTML / CSS / JavaScript</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--design" href="#courses" aria-label="Explore Web Design courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-browser" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">03</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Make it memorable</span>
+                        <h3>Web Design</h3>
+                        <p>Create websites that look as good as they work.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">Layout / Type / Responsive</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--ux" href="#courses" aria-label="Explore UI/UX Design courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-brand-figma" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">04</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Design with purpose</span>
+                        <h3>UI/UX Design</h3>
+                        <p>Turn great ideas into intuitive digital experiences.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">Figma / Research / Prototypes</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--mobile" href="#courses" aria-label="Explore Mobile App Development courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-device-mobile-code" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">05</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Think beyond desktop</span>
+                        <h3>Mobile App<br>Development</h3>
+                        <p>Create apps people love to take everywhere.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">Flutter / React Native / iOS</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--python" href="#courses" aria-label="Explore Python Programming courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-brand-python" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">06</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Small steps. Big ideas.</span>
+                        <h3>Python<br>Programming</h3>
+                        <p>Start simple. Build something powerful.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">Python / Automation / Scripting</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--data" href="#courses" aria-label="Explore Data &amp; Databases courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-database" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">07</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Connect the dots</span>
+                        <h3>Data &amp; Databases</h3>
+                        <p>Make sense of data and build smarter systems.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">SQL / MongoDB / Analytics</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+                <a class="coding-category coding-category--cloud" href="#courses" aria-label="Explore DevOps &amp; Cloud courses">
+                    <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
+                        <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
+                        <path class="category-wave category-wave--outer" d="M420 132C341 126 285 174 299 239C314 305 364 331 305 446H420Z"/>
+                        <path class="category-wave category-wave--inner" d="M420 184C351 176 317 232 338 282C352 319 391 339 420 336Z"/>
+                        <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
+                        <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
+                    </svg>
+                    <div class="coding-category__top">
+                        <span class="coding-category__icon"><i class="ti ti-cloud-code" aria-hidden="true"></i></span>
+                        <span class="coding-category__number" aria-hidden="true">08</span>
+                    </div>
+                    <div class="coding-category__body">
+                        <span class="coding-category__eyebrow">Build. Ship. Scale.</span>
+                        <h3>DevOps &amp; Cloud</h3>
+                        <p>Ship with confidence. Scale without limits.</p>
+                    </div>
+                    <div class="coding-category__footer">
+                        <span class="coding-category__topics">Git / Docker / Cloud</span>
+                        <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- online courses end -->
+
+    <!-- about section start -->
+    <section id="about" class="about-edufast" aria-labelledby="about-title" data-scroll-reveal>
+        <div class="about-edufast__layout">
+            <div class="about-edufast__visual">
+                <svg class="about-edufast__backdrop" viewBox="0 0 700 740" preserveAspectRatio="none" aria-hidden="true">
+                    <defs><linearGradient id="about-blue-shape" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcecff"/><stop offset=".5" stop-color="#8cbcff"/><stop offset="1" stop-color="#367fff"/></linearGradient></defs>
+                    <path d="M95 171C184 153 212 79 303 37C415-15 520 12 568 109C615 202 695 193 690 326C685 416 651 478 667 568C690 690 544 726 444 702C325 671 275 760 157 715C48 675 17 576 57 487C98 395-13 382 24 279C41 231 64 191 95 171Z" fill="#edf5ff"/>
+                    <path d="M89 204C117 105 253 27 367 49C470 69 560 170 597 253C629 326 669 404 632 483C596 564 609 647 514 681C401 724 355 691 279 646C196 597 49 631 20 520C-5 423 89 388 71 313C57 254 71 236 89 204Z" fill="url(#about-blue-shape)"/>
+                    <path d="M659 196C718 254 662 304 637 340" stroke="#4689ff" stroke-width="3" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span class="about-edufast__dots" aria-hidden="true"></span>
+                <div class="about-edufast__photo"><img src="assets/images/common/excelent2.jpg" alt="Three students learning and working together on a laptop" width="526" height="665" loading="lazy" decoding="async"></div>
+                <span class="about-edufast__idea" aria-hidden="true"><i class="ti ti-bulb"></i></span>
+                <div class="about-metric about-metric--reviews">
+                    <span class="about-metric__icon" aria-hidden="true"><i class="ti ti-star-filled"></i></span>
+                    <div><strong>4.9 <span>(8.6K)</span></strong><p>AVG Reviews</p></div>
+                </div>
+                <div class="about-metric about-metric--offer">
+                    <span class="about-metric__icon" aria-hidden="true"><i class="ti ti-school"></i></span>
+                    <div><strong>20% OFF</strong><p>For All Courses</p></div>
+                </div>
+                <div class="about-satisfaction">
+                    <div class="about-satisfaction__gauge" aria-hidden="true">
+                        <svg viewBox="0 0 180 110" fill="none"><defs><linearGradient id="about-satisfaction-fill" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff4b08"/><stop offset=".75" stop-color="#ff4b08"/><stop offset="1" stop-color="#ffb18c"/></linearGradient></defs><path d="M16 94A74 74 0 0 1 164 94" stroke="#eeeeef" stroke-width="11" stroke-linecap="round"/><path d="M16 94A74 74 0 0 1 164 94" stroke="url(#about-satisfaction-fill)" stroke-width="11" stroke-linecap="round" pathLength="100" stroke-dasharray="90 100"/></svg>
+                        <img src="assets/images/common/worldcup.png" alt="" width="40" height="40" loading="lazy">
+                        <span>90%</span>
+                    </div>
+                    <strong>Excellent</strong>
+                    <p>90% Satisfied Clients</p>
+                </div>
+            </div>
+            <div class="about-edufast__content">
+                <span class="about-edufast__eyebrow section-label">About Edufast</span>
+                <div class="about-edufast__heading">
+                    <h2 id="about-title" class="about-edufast__title section-heading">The place where<br>you can <span>achieve.<svg viewBox="0 0 230 24" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M4 16C76-13 151 42 225 9" stroke="#a4c7ff" stroke-width="5" stroke-linecap="round"/><path d="M118 16C153 25 193 23 225 9" stroke="#2276ff" stroke-width="5" stroke-linecap="round"/></svg></span></h2>
+                    <span class="about-edufast__spark" aria-hidden="true"></span>
+                </div>
+                <p class="about-edufast__intro">Our story is a journey of passion, commitment, and dedication to empowering learners like you.</p>
+                <ul class="about-edufast__list">
+                    <li>
+                        <span class="about-edufast__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M6 40V29H14V40M20 40V22H28V40M34 40V13H42V40M5 40H43M8 23L20 14L27 17L40 5M31 5H40V14" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <div><h3>Our Mission</h3><p>Discover how Edufast collaboratively crafts learning experiences that go beyond the ordinary, shaping your educational journey uniquely.</p></div>
+                    </li>
+                    <li>
+                        <span class="about-edufast__icon about-edufast__icon--vision" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M5 41L18 20L27 31L32 25L44 41H5ZM18 20L24 28M26 22V5M26 6H39L35 11L39 16H26" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <div><h3>Our Vision</h3><p>Discover how Edufast collaboratively crafts learning experiences that go beyond the ordinary, shaping your educational journey uniquely.</p></div>
+                    </li>
+                </ul>
+                <details class="about-edufast__more">
+                    <summary class="about-edufast__link">Read More<span aria-hidden="true"><i class="ti ti-arrow-right"></i></span></summary>
+                    <div class="about-edufast__details"><p>Explore practical learning paths in software development, web development, and design. Discover courses that help you turn new skills into projects of your own.</p><a href="#courses">Explore our courses <i class="ti ti-arrow-right" aria-hidden="true"></i></a></div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- explore courses Start -->
+    <section id="courses" class="featured-learning" aria-labelledby="featured-courses-title" data-scroll-reveal>
+        <div class="container">
+            <div class="featured-learning__header">
+                <div class="featured-learning__intro">
+                    <span class="featured-learning__eyebrow section-label">Featured courses</span>
+                    <h2 id="featured-courses-title" class="section-heading">Find your next <em>skill.</em></h2>
+                    <p>Learn the tools. Build real projects. Create something you're proud of.</p>
+                </div>
+                <div class="featured-learning__tools">
+                    <div class="course-filters" role="group" aria-label="Filter featured courses">
+                        <button type="button" class="course-filter" data-course-filter="all" aria-label="All courses, 6 courses" aria-pressed="true" aria-controls="featured-courses-grid"><i class="ti ti-layout-grid" aria-hidden="true"></i><span>All courses</span><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+                        <button type="button" class="course-filter" data-course-filter="development" aria-label="Development, 4 courses" aria-pressed="false" aria-controls="featured-courses-grid"><i class="ti ti-code" aria-hidden="true"></i><span>Development</span><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+                        <button type="button" class="course-filter" data-course-filter="design" aria-label="Design, 2 courses" aria-pressed="false" aria-controls="featured-courses-grid"><i class="ti ti-pencil" aria-hidden="true"></i><span>Design</span><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <p class="course-filter-status" role="status" aria-live="polite"></p>
+            <div id="featured-courses-grid" class="featured-learning__grid">
+                <article id="course-software" class="featured-course featured-course--software" data-course-id="software" data-course-category="development">
+                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/software.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
+                    <div class="featured-course__body">
+                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-code" aria-hidden="true"></i> Software development</span><span class="featured-course__level">Beginner</span></div>
+                        <h3>Software Development Essentials</h3>
+                        <p class="featured-course__description">Build a strong foundation in programming, problem solving, and clean, maintainable code.</p>
+                        <div class="featured-course__skills" aria-label="Course topics"><span>Programming</span><span>OOP</span><span>Problem solving</span></div>
+                    </div>
+                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Software Development Essentials">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
+                </article>
+                <article id="course-web" class="featured-course featured-course--web" data-course-id="web" data-course-category="development">
+                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/web.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
+                    <div class="featured-course__body">
+                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-world-code" aria-hidden="true"></i> Web development</span><span class="featured-course__level">Intermediate</span></div>
+                        <h3>Full-Stack Web Development</h3>
+                        <p class="featured-course__description">Bring a complete web app to life, from responsive interfaces to APIs and databases.</p>
+                        <div class="featured-course__skills" aria-label="Course topics"><span>JavaScript</span><span>APIs</span><span>Databases</span></div>
+                    </div>
+                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Full-Stack Web Development">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
+                </article>
+                <article id="course-ux" class="featured-course featured-course--ux" data-course-id="ux" data-course-category="design">
+                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/ux.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
+                    <div class="featured-course__body">
+                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-pencil" aria-hidden="true"></i> UI/UX design</span><span class="featured-course__level">Beginner</span></div>
+                        <h3>UI/UX Design with Figma</h3>
+                        <p class="featured-course__description">Turn user insights into thoughtful interfaces, reusable components, and interactive prototypes.</p>
+                        <div class="featured-course__skills" aria-label="Course topics"><span>Figma</span><span>User research</span><span>Prototyping</span></div>
+                    </div>
+                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for UI/UX Design with Figma">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
+                </article>
+                <article id="course-python" class="featured-course featured-course--python" data-course-id="python" data-course-category="development">
+                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/python.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
+                    <div class="featured-course__body">
+                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-brand-python" aria-hidden="true"></i> Python programming</span><span class="featured-course__level">Beginner</span></div>
+                        <h3>Python Programming Foundations</h3>
+                        <p class="featured-course__description">Write your first Python programs and automate everyday tasks with clear, practical code.</p>
+                        <div class="featured-course__skills" aria-label="Course topics"><span>Python</span><span>Automation</span><span>Scripting</span></div>
+                    </div>
+                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Python Programming Foundations">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
+                </article>
+                <article id="course-design" class="featured-course featured-course--design" data-course-id="design" data-course-category="design">
+                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/design.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
+                    <div class="featured-course__body">
+                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-browser" aria-hidden="true"></i> Web design</span><span class="featured-course__level">Beginner</span></div>
+                        <h3>Responsive Web Design</h3>
+                        <p class="featured-course__description">Create polished websites with strong typography, thoughtful layouts, and accessible design.</p>
+                        <div class="featured-course__skills" aria-label="Course topics"><span>HTML &amp; CSS</span><span>Layouts</span><span>Accessibility</span></div>
+                    </div>
+                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Responsive Web Design">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
+                </article>
+                <article id="course-react" class="featured-course featured-course--react" data-course-id="react" data-course-category="development">
+                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/react.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
+                    <div class="featured-course__body">
+                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-brand-react" aria-hidden="true"></i> Frontend development</span><span class="featured-course__level">Intermediate</span></div>
+                        <h3>Build Interactive Apps with React</h3>
+                        <p class="featured-course__description">Create reusable components and responsive experiences with modern React and JavaScript.</p>
+                        <div class="featured-course__skills" aria-label="Course topics"><span>React</span><span>Components</span><span>State &amp; hooks</span></div>
+                    </div>
+                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Build Interactive Apps with React">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
+                </article>
+            </div>
+        </div>
+        <dialog id="course-preview" class="course-dialog" aria-labelledby="course-preview-title">
+            <button type="button" class="course-dialog__close" aria-label="Close course preview" autofocus><i class="ti ti-x" aria-hidden="true"></i></button>
+            <div class="course-dialog__content">
+                <span class="course-dialog__category"></span>
+                <h2 id="course-preview-title"></h2>
+                <p class="course-dialog__description"></p>
+                <div class="course-dialog__skills"></div>
+                <h3>What you'll explore</h3>
+                <ul class="course-dialog__topics"></ul>
+                <div class="course-dialog__project"><span>PUT IT INTO PRACTICE</span><strong></strong></div>
+                <button type="button" class="course-dialog__back">Keep exploring <i class="ti ti-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </dialog>
+    </section>
+    <!-- explore courses end -->
+
+    <!-- course finder start -->
+    <section id="course-finder" class="course-finder" aria-labelledby="course-finder-title" data-scroll-reveal>
+        <div class="course-finder__banner">
+            <div class="course-finder__visual">
+                <img src="assets/images/banner/course-finder.jpg"
+                    alt="A smiling student wearing a headset, learning on her laptop"
+                    width="2175" height="723" loading="lazy" decoding="async">
+            </div>
+            <div class="course-finder__content">
+                <h2 id="course-finder-title" class="course-finder__title section-heading">
+                    <span>Let&rsquo;s Find the Right</span>
+                    <span>Course for You!</span>
+                </h2>
+                <span class="course-finder__accent" aria-hidden="true"></span>
+                <p class="course-finder__description">Explore expert-led courses and achieve your learning goals with confidence. With our expert tutors, your success is closer than ever.</p>
+                <a href="#courses" class="course-finder__button">
+                    Start Learning
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M4 12h16m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- course finder end -->
+
+  
+
+
+    <!-- testimonial start -->
+    <section class="testimonial__one pt-120 pb-120" aria-labelledby="testimonials-title" data-scroll-reveal>
+        <div class="container">
+            <div class="row justify-content-center wow fadeInDown">
+                <div class="col-lg-7">
+                    <div class="sec__titletwo text-center mb-10 mb-xl-15">
+                        <h2 id="testimonials-title" class="two__title section-heading n700-color mb-4 mb-xl-5">
+                            What our customers say
+                        </h2>
+                        <p class="pragraph max61 pragraph m-auto">
+                            We take immense pride in the positive impact our courses and community have on learners' lives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper testimonial__onewrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testi__oneitem radius32 py-5 py-xxl-8 px-4 px-xxl-8 position-relative">
+                           <ul class="ratting d-flex align-items-center gap-1 gap-xl-2">
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20e s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-half-filled fs20 s1-color"></i>
+                                </li>
+                            </ul>
+                            <p class="mb-5 mt-8 mb-xxl-8 pragraph n700-color">
+                                "I can't thank enough for the incredible courses they offer. I completed the 'Web Development Fundamentals' course, and it not only gave me the skills.”
+                            </p>
+                            <div class="d-flex align-items-center gap-2 gap-xxl-6">
+                                <img src="assets/images/common/cameron.png" alt="img" class="radius100">
+                                <div class="cont">
+                                    <span class="n700-color cameron d-block mb-0 mb-xl-1">
+                                        Cameron Williamson
+                                    </span>
+                                    <span class="fs-seven n700-color">
+                                        Software Tester
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="assets/images/vectors/vector-white.png" alt="img" class="cmn__white">
+                            <a href="#0" class="quote radius100 d-flex align-items-center justify-content-center">
+                                <i class="ti ti-quote fs-five n700-color"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi__oneitem radius32 py-5 py-xxl-8 px-4 px-xxl-8 position-relative">
+                           <ul class="ratting d-flex align-items-center gap-1 gap-xl-2">
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20e s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-half-filled fs20 s1-color"></i>
+                                </li>
+                            </ul>
+                            <p class="mb-5 mt-8 mb-xxl-8 pragraph n700-color">
+                                "I can't thank enough for the incredible courses they offer. I completed the 'Web Development Fundamentals' course, and it not only gave me the skills.”
+                            </p>
+                            <div class="d-flex align-items-center gap-2 gap-xxl-6">
+                                <img src="assets/images/common/cameron.png" alt="img" class="radius100">
+                                <div class="cont">
+                                    <span class="n700-color cameron d-block mb-0 mb-xl-1">
+                                        Courtney Henry
+                                    </span>
+                                    <span class="fs-seven n700-color">
+                                        Project Manager
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="assets/images/vectors/vector-white.png" alt="img" class="cmn__white">
+                            <a href="#0" class="quote radius100 d-flex align-items-center justify-content-center">
+                                <i class="ti ti-quote fs-five n700-color"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi__oneitem radius32 py-5 py-xxl-8 px-4 px-xxl-8 position-relative">
+                           <ul class="ratting d-flex align-items-center gap-1 gap-xl-2">
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20 s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-filled fs20e s1-color"></i>
+                                </li>
+                                <li>
+                                    <i class="ti ti-star-half-filled fs20 s1-color"></i>
+                                </li>
+                            </ul>
+                            <p class="mb-5 mt-8 mb-xxl-8 pragraph n700-color">
+                                "I can't thank enough for the incredible courses they offer. I completed the 'Web Development Fundamentals' course, and it not only gave me the skills.”
+                            </p>
+                            <div class="d-flex align-items-center gap-2 gap-xxl-6">
+                                <img src="assets/images/common/cameron.png" alt="img" class="radius100">
+                                <div class="cont">
+                                    <span class="n700-color cameron d-block mb-0 mb-xl-1">
+                                        Courtney Henry
+                                    </span>
+                                    <span class="fs-seven n700-color">
+                                        Project Manager
+                                    </span>
+                                </div>
+                            </div>
+                            <img src="assets/images/vectors/vector-white.png" alt="img" class="cmn__white">
+                            <a href="#0" class="quote radius100 d-flex align-items-center justify-content-center">
+                                <i class="ti ti-quote fs-five n700-color"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-btn mt-6 mt-lg-10 mb-2 px-5 d-center justify-content-center gap-3">
+                    <button type="button" aria-label="Slide Prev" class="ara-prev cmn-btn-cilicon d-center cmn__icon56 cmn__icon56border">
+                        <i class="ti ti-chevron-left fs-five"></i>
+                    </button>
+                    <button type="button" aria-label="Slide Next" class="ara-next cmn-btn-cilicon d-center cmn__icon56">
+                        <i class="ti ti-chevron-right fs-five"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial end -->
+
+    <nav class="quick-contact" aria-label="Quick contact">
+        <a class="quick-contact__button quick-contact__button--call" href="tel:+919876543210" aria-label="Call DevOrion Academy at +91 98765 43210" title="Call us"><i class="ti ti-phone-call" aria-hidden="true"></i></a>
+        <span class="quick-contact__divider" aria-hidden="true"></span>
+        <a class="quick-contact__button quick-contact__button--whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="Chat with DevOrion Academy on WhatsApp (opens in a new tab)" title="Chat on WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+    </nav>
+    <!-- footer Start -->
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <div class="site-footer__container">
+                <div class="site-footer__grid">
+                    <div class="site-footer__brand site-footer__column">
+                        <h2 id="footer-about-title" class="site-footer__about-title">About Us</h2>
+                        <p class="site-footer__description">A modern learning platform to build in-demand skills, work on real projects, and grow your career.</p>
+                        <ul class="site-footer__benefits" aria-label="Learning benefits">
+                            <li><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m9 5 18 11L9 27V5Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg><span>Expert<br>Instructors</span></li>
+                            <li><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m4 10 12-6 12 6-12 6-12-6Zm0 7 12 6 12-6M4 24l12 6 12-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Practical<br>Projects</span></li>
+                            <li><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m16 3 4 3 5 1 1 5 3 4-3 4-1 5-5 1-4 3-4-3-5-1-1-5-3-4 3-4 1-5 5-1 4-3Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="m16 9 2 4 4.5.7-3.3 3.2.8 4.5-4-2.1-4 2.1.8-4.5-3.3-3.2L14 13l2-4Z" fill="currentColor"/></svg><span>Job<br>Support</span></li>
+                        </ul>
+                    </div>
+                    <nav class="site-footer__column site-footer__column--navigation" aria-labelledby="footer-navigation-title">
+                        <h2 id="footer-navigation-title">Navigation</h2>
+                        <ul class="site-footer__links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="blog-grid.html">Blogs</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="site-footer__column site-footer__column--courses" aria-labelledby="footer-courses-title">
+                        <h2 id="footer-courses-title">Explore Courses</h2>
+                        <ul class="site-footer__links">
+                            <li><a href="#course-software">Software Development</a></li>
+                            <li><a href="#course-web">Web Development</a></li>
+                            <li><a href="#course-ux">UI/UX Design</a></li>
+                            <li><a href="#course-python">Python Programming</a></li>
+                            <li><a href="#learning-paths">Browse Categories</a></li>
+                        </ul>
+                    </nav>
+                    <section id="contact" class="site-footer__column site-footer__column--contact" aria-labelledby="footer-contact-title">
+                        <h2 id="footer-contact-title">Contact</h2>
+                        <ul class="site-footer__contacts">
+                            <li><span class="site-footer__contact-icon site-footer__contact-icon--phone"><i class="ti ti-phone-filled" aria-hidden="true"></i></span><a href="tel:+13035550105">(303) 555-0105</a></li>
+                            <li><span class="site-footer__contact-icon site-footer__contact-icon--email"><i class="ti ti-mail-filled" aria-hidden="true"></i></span><div><a href="mailto:info@gmail.com">info@gmail.com</a><a href="mailto:example@gmail.com">example@gmail.com</a></div></li>
+                            <li><span class="site-footer__contact-icon site-footer__contact-icon--address"><i class="ti ti-map-pin-filled" aria-hidden="true"></i></span><p>3605 Parker Rd.<br>3890 Poplar Dr.</p></li>
+                        </ul>
+                    </section>
+                    <section class="site-footer__column site-footer__column--social" aria-labelledby="footer-social-title">
+                        <h2 id="footer-social-title">Follow Us</h2>
+                        <p class="site-footer__social-description">Stay connected for updates, new courses and learning tips.</p>
+                        <ul class="site-footer__socials">
+                            <li><a class="site-footer__social--facebook" href="javascript:void(0)" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a></li>
+                            <li><a class="site-footer__social--x" href="javascript:void(0)" aria-label="X (Twitter)"><i class="ti ti-brand-x" aria-hidden="true"></i></a></li>
+                            <li><a class="site-footer__social--instagram" href="javascript:void(0)" aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a></li>
+                            <li><a class="site-footer__social--youtube" href="javascript:void(0)" aria-label="YouTube"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a></li>
+                            <li><a class="site-footer__social--linkedin" href="javascript:void(0)" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__container site-footer__bottom">
+            <p>&copy; 2026 <a href="index.html">DevOrion Academy.</a> All Rights Reserved.</p>
+            <ul class="site-footer__legal">
+                <li><a href="contact.html">Help</a></li>
+                <li><a href="privacy.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/plugin-custom.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/banner-slider.js"></script>
+    <script src="assets/js/featured-courses.js"></script>
+    <script src="assets/js/scroll-reveal.js"></script>
+
+</body>
+
+</html>

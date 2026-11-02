@@ -1,0 +1,7 @@
+About Us page photographs.
+Hero: optimized JPEG copy of assets/images/banner/academy-collaboration.png, originally generated with built-in ImageGen.
+Story: assets/images/about-page/story.jpg, generated with the built-in ImageGen tool.
+Career banner: existing assets/images/banner/course-finder.jpg.
+
+Final story-photo prompt:
+Use case: photorealistic-natural. Asset type: About Us editorial photograph for DevOrion Academy, a practical technology training academy. Create one polished landscape 1536 by 1024 education photograph of four friendly young adult South Asian learners collaborating around an open dark laptop in a bright contemporary classroom. One man with dark wavy hair, glasses and a light blue button-down shirt stands slightly behind three women, one wearing a cream blouse, one a mustard-yellow shirt and one a rust-orange knit top. They are naturally smiling, looking at the laptop and discussing a project together. Clear natural faces, believable hands and body proportions. Large windows, subtle greenery and soft modern classroom details in the out-of-focus background. The people and laptop fill the central frame with a little breathing space around the heads and table. Soft daylight, warm welcoming mood, professional commercial education campaign quality, realistic textures, pale blue highlights and restrained orange accents. No lettering, no text overlays, no logos, no graphic badges, no card borders, no UI, no watermark. This is a standalone photograph to place in a coded page, not a website screenshot.

@@ -1,0 +1,137 @@
+/* Pastel learning cards, with dimensional badges and flowing color waves. */
+.learning-benefits { padding: 34px 0 14px; background: #fff; }
+.learning-benefits__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.benefit-card {
+    --benefit-accent: #0ab684;
+    --benefit-rgb: 10 182 132;
+    --benefit-heading: #006047;
+    --benefit-title: #006047;
+    --benefit-surface: #f8fffb;
+    --benefit-surface-end: #e0faed;
+    --benefit-border: #bff2de;
+    --benefit-icon-tint: #b2f4d2;
+    position: relative;
+    container-type: inline-size;
+    isolation: isolate;
+    min-width: 0;
+    aspect-ratio: 500 / 280;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--benefit-border);
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--benefit-surface) 8%, var(--benefit-surface-end));
+    box-shadow: 0 16px 28px -12px rgb(var(--benefit-rgb) / 23%);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.benefit-card--experts {
+    --benefit-accent: #8751f5;
+    --benefit-rgb: 135 81 245;
+    --benefit-heading: #6230d7;
+    --benefit-title: #15243b;
+    --benefit-surface: #fcfaff;
+    --benefit-surface-end: #f0e9ff;
+    --benefit-border: #dfd0ff;
+    --benefit-icon-tint: #d8c5ff;
+}
+.benefit-card--access {
+    --benefit-accent: #f4a00b;
+    --benefit-rgb: 244 160 11;
+    --benefit-heading: #ba6900;
+    --benefit-title: #8b6840;
+    --benefit-surface: #fffcf6;
+    --benefit-surface-end: #fff3dc;
+    --benefit-border: #ffe0ae;
+    --benefit-icon-tint: #ffe0a6;
+}
+.benefit-card--certificate {
+    --benefit-accent: #3299f3;
+    --benefit-rgb: 50 153 243;
+    --benefit-heading: #066bbd;
+    --benefit-title: #102e49;
+    --benefit-surface: #f3faff;
+    --benefit-surface-end: #e0f1ff;
+    --benefit-border: #badfff;
+    --benefit-icon-tint: #b8dfff;
+}
+.benefit-card::after {
+    position: absolute;
+    z-index: -1;
+    top: -24%;
+    right: -8%;
+    width: 32%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(140deg, rgb(var(--benefit-rgb) / 8%), rgb(var(--benefit-rgb) / 24%));
+    content: '';
+    pointer-events: none;
+}
+.benefit-card__waves { position: absolute; z-index: -1; inset: 0; width: 100%; height: 100%; color: var(--benefit-accent); pointer-events: none; }
+.benefit-card__waves path { fill: currentColor; opacity: .2; }
+.benefit-card__waves path + path { opacity: .78; }
+.benefit-card__dots {
+    position: absolute;
+    left: 6.4%;
+    bottom: 9.2%;
+    width: 17.6%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(circle, var(--benefit-accent) .6cqw, transparent .7cqw);
+    background-size: 3.6cqw 3.6cqw;
+    opacity: .42;
+    mask-image: linear-gradient(90deg, #000, rgb(0 0 0 / 40%));
+    pointer-events: none;
+}
+.benefit-card__icon {
+    position: absolute;
+    top: 13.2%;
+    left: 6.4%;
+    display: grid;
+    place-items: center;
+    width: 25%;
+    aspect-ratio: 1;
+    border: 1.7cqw solid rgb(255 255 255 / 88%);
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 75%, rgb(255 255 255 / 55%), transparent 68%), linear-gradient(145deg, var(--benefit-icon-tint), var(--benefit-surface-end));
+    color: var(--benefit-accent);
+    box-shadow: 0 8px 16px rgb(var(--benefit-rgb) / 24%), inset 0 2px 6px rgb(255 255 255 / 70%);
+}
+.benefit-card__icon::before { position: absolute; inset: 15%; border-radius: 50%; background: radial-gradient(circle, rgb(var(--benefit-rgb) / 14%), transparent 72%); content: ''; }
+.benefit-card__glyph { position: relative; width: 59%; height: 59%; overflow: visible; filter: drop-shadow(0 3px 1px rgb(var(--benefit-rgb) / 15%)); }
+.benefit-card--courses .benefit-card__icon::before { inset: 19%; background: linear-gradient(145deg, #5eddaa, #00a471); box-shadow: inset 0 2px 3px rgb(255 255 255 / 30%); }
+.benefit-card--courses .benefit-card__glyph { width: 45%; height: 45%; color: #fff; }
+.benefit-card--access .benefit-card__glyph { color: #dd8900; }
+.benefit-card--certificate .benefit-card__glyph { color: #2488d5; }
+.benefit-card__copy { position: absolute; top: 18.2%; left: 35%; right: 4%; }
+.benefit-card h3 { margin: 0 0 .45em; color: var(--benefit-title); font-size: 7.2cqw; font-weight: 700 !important; line-height: 1.16; letter-spacing: -.04em; text-transform: none; }
+.benefit-card h3 > span { color: var(--benefit-heading); font-size: inherit; font-weight: inherit; line-height: inherit; letter-spacing: inherit; }
+.benefit-card p { margin: 0; color: #6c7079; font-size: 4.5cqw; line-height: 1.4; font-weight: 500; letter-spacing: -.02em; }
+.benefit-card__arrow { position: absolute; right: 6%; bottom: 11%; display: grid; place-items: center; width: 14.2%; aspect-ratio: 1; border: 1px solid rgb(var(--benefit-rgb) / 8%); border-radius: 50%; background: #fff; color: var(--benefit-accent); box-shadow: 0 3px 8px rgb(var(--benefit-rgb) / 7%); transition: color 200ms ease, transform 200ms ease; }
+.benefit-card__arrow svg { width: 49%; height: 49%; }
+.benefit-card__arrow:focus-visible { outline: 3px solid var(--benefit-heading); outline-offset: 4px; }
+.benefit-card__arrow:hover { color: var(--benefit-heading); transform: translateX(3px); }
+
+@media (hover: hover) {
+    .benefit-card:hover { transform: translateY(-4px); box-shadow: 0 20px 30px -10px rgb(var(--benefit-rgb) / 27%); }
+}
+
+@media (max-width: 1199px) {
+    .learning-benefits__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+
+@media (max-width: 575px) {
+    .learning-benefits { padding-top: 24px; }
+    .learning-benefits__grid { grid-template-columns: 1fr; gap: 20px; }
+    .benefit-card { border-radius: 18px; }
+    .benefit-card__arrow { min-width: 44px; min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .benefit-card, .benefit-card__arrow { transition: none; }
+}
+
+/* Keep testimonial cards aligned when three share a row. */
+.testimonial__onewrap .swiper-wrapper { align-items: stretch; }
+.testimonial__onewrap .swiper-slide { height: auto; }
+.testimonial__onewrap .testi__oneitem { height: 100%; }
+.testimonial__onewrap .slider-btn:has(.swiper-button-lock) { display: none !important; }

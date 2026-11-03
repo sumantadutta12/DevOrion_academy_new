@@ -52,7 +52,7 @@
 .academy-nav__toggle { display: none; }
 .academy-nav__item-icon, .academy-sidebar__help { display: none; }
 .academy-nav :is(a, button, summary):focus-visible { outline: 3px solid #2c68bc; outline-offset: 4px; }
-#about, #contact, #featured-courses-grid, .featured-course { scroll-margin-top: 116px; }
+#about, #contact, #courses, .coding-category[id], #course-react { scroll-margin-top: 116px; }
 
 
 /* Top-layer mobile drawer, independent of the translucent header. */

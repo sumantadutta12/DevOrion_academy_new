@@ -51,7 +51,7 @@
                         <li><a class="academy-nav__link" href="about.html">About Us</a></li>
                         <li>
                             <details class="academy-nav__dropdown">
-                                <summary class="academy-nav__link">Courses <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+                                <summary class="academy-nav__link">Program <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
                                 <ul class="academy-nav__submenu">
                                     <li><a href="index.html#courses">Explore All Courses</a></li>
                                     <li><a href="software-development.html">Software Development</a></li>
@@ -68,15 +68,17 @@
                                 <summary class="academy-nav__link">Career Support <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
                                 <ul class="academy-nav__submenu">
                                     <li><a href="index.html#learning-paths">Find Your Learning Path</a></li>
+                                    <li><a href="index.html#mock-interviews">Mock Interviews</a></li>
+                                    <li><a href="index.html#career-counseling">Career Counseling</a></li>
                                     <li><a href="contact.html#contact-form">Speak to an Advisor</a></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a class="academy-nav__link" href="student-projects.html">Student Projects</a></li>
+                        <!-- <li><a class="academy-nav__link" href="student-projects.html">Student Projects</a></li> -->
                         <li><a class="academy-nav__link" href="contact.html">Contact Us</a></li>
                     </ul>
                     <div class="academy-nav__actions">
-                        <a class="academy-nav__enquire" href="contact.html#contact-form">Enquire Now <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+                        <a class="academy-nav__enquire" href="contact.html#contact-form">Student Portal <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
                     </div>
                 </div>
             </nav>
@@ -113,65 +115,53 @@
         <div class="course-layout software-container">
             <div class="course-content">
                 <nav class="course-tabs" aria-label="Course sections">
-                    <a href="#course-overview" aria-current="location">Overview</a><a href="#course-curriculum">Curriculum</a><a href="#course-instructor">Instructor</a><a href="#course-reviews">Reviews (2,940)</a><a href="#course-faqs">FAQs</a>
+                    <a href="#course-overview" aria-current="location">Overview</a><a href="#course-learning">What You&rsquo;ll Learn</a><a href="#course-instructor">Instructor</a><a href="#course-faqs">FAQs</a>
                 </nav>
                 <section id="course-overview" class="course-section course-overview" aria-labelledby="course-overview-title">
                     <h2 id="course-overview-title">About This Course</h2>
                     <p>The <strong>Full Stack Web Development</strong> course helps you become a job-ready developer by teaching both frontend and backend development. You will learn to build real-world, end-to-end web applications using modern technologies like HTML, CSS, JavaScript, React, Node.js, Express and MongoDB.</p>
                 </section>
-                <section class="course-section" aria-labelledby="course-learning-title">
+                <section id="course-learning" class="course-section" aria-labelledby="course-learning-title">
                     <div class="course-section-heading"><div class="course-section-heading__title"><i class="ti ti-book-2" aria-hidden="true"></i><h2 id="course-learning-title">What You Will Learn</h2></div></div>
                     <ul class="course-learning-list"><li><i class="ti ti-check" aria-hidden="true"></i>Build responsive and modern user interfaces</li><li><i class="ti ti-check" aria-hidden="true"></i>Develop APIs and backend services</li><li><i class="ti ti-check" aria-hidden="true"></i>Work with databases using MongoDB</li><li><i class="ti ti-check" aria-hidden="true"></i>Build and deploy real-world projects</li><li><i class="ti ti-check" aria-hidden="true"></i>Use Git, GitHub and VS Code in your workflow</li><li><i class="ti ti-check" aria-hidden="true"></i>Implement authentication and authorization</li><li><i class="ti ti-check" aria-hidden="true"></i>Understand deployment and project workflows</li><li><i class="ti ti-check" aria-hidden="true"></i>Prepare for developer interviews and jobs</li></ul>
                 </section>
-                <section id="course-curriculum" class="course-section course-curriculum" aria-labelledby="course-curriculum-title">
-                    <div class="course-section-heading"><div class="course-section-heading__title"><i class="ti ti-certificate" aria-hidden="true"></i><h2 id="course-curriculum-title">Course Curriculum</h2></div><div class="course-section-heading__meta"><span>10 Modules</span><span data-course-lesson-count>62 Lessons</span><span data-course-hours>40 Hours</span></div></div>
-                    <div class="course-module-list">
-                        <details class="course-module" data-lessons="5" data-minutes="80">
-                            <summary><span class="course-module__number">01</span><span class="course-module__title">Introduction to Web Development</span><span class="course-module__meta"><span>5 Lessons</span><span>1h 20m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>How the web works: browsers, servers and requests</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Frontend, backend and database responsibilities</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Set up your editor, browser tools and first project</li></ul><button type="button" class="course-module__preview" data-course-preview aria-haspopup="dialog" aria-controls="course-preview-dialog"><i class="ti ti-player-play-filled" aria-hidden="true"></i>Preview the course</button></div>
+                <section id="course-faqs" class="course-section course-faqs" aria-labelledby="course-faqs-title">
+                    <div class="course-faqs__heading">
+                        <span class="course-faqs__icon"><i class="ti ti-messages" aria-hidden="true"></i></span>
+                        <div><span class="course-faqs__eyebrow">A little clarity before you begin</span><h2 id="course-faqs-title" class="course-faqs__title">Frequently asked <span>questions.</span></h2><p>Understand the essentials. Take your next step with confidence.</p></div>
+                    </div>
+                    <div class="course-faqs__list">
+                        <details class="course-faq" name="fullstack-faq" open>
+                            <summary><span class="course-faq__question">Is this course suitable for beginners?</span><span class="course-faq__toggle" aria-hidden="true"></span></summary>
+                            <div class="course-faq__answer"><p>Yes. Start with web development foundations, then build toward JavaScript, React, APIs and databases. You can develop your skills step by step while working on practical projects.</p></div>
                         </details>
-                        <details class="course-module" data-lessons="7" data-minutes="190">
-                            <summary><span class="course-module__number">02</span><span class="course-module__title">HTML &amp; CSS - Building Modern UIs</span><span class="course-module__meta"><span>7 Lessons</span><span>3h 10m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Semantic HTML and accessible page structure</li><li><i class="ti ti-player-play" aria-hidden="true"></i>CSS layouts with Flexbox and Grid</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Responsive interfaces, forms and reusable styles</li></ul></div>
+                        <details class="course-faq" name="fullstack-faq">
+                            <summary><span class="course-faq__question">What do I need to get started?</span><span class="course-faq__toggle" aria-hidden="true"></span></summary>
+                            <div class="course-faq__answer"><p>You will need a laptop or desktop computer, a modern browser, a code editor and an internet connection. The course starts with setting up your development tools.</p></div>
                         </details>
-                        <details class="course-module" data-lessons="8" data-minutes="260">
-                            <summary><span class="course-module__number">03</span><span class="course-module__title">JavaScript Fundamentals</span><span class="course-module__meta"><span>8 Lessons</span><span>4h 20m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Variables, functions, arrays and objects</li><li><i class="ti ti-player-play" aria-hidden="true"></i>DOM events, browser APIs and asynchronous code</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Work with fetch, promises and application data</li></ul></div>
+                        <details class="course-faq" name="fullstack-faq">
+                            <summary><span class="course-faq__question">What will I learn in this course?</span><span class="course-faq__toggle" aria-hidden="true"></span></summary>
+                            <div class="course-faq__answer"><p>Explore responsive interfaces with HTML and CSS, interactive applications with JavaScript and React, backend services with Node.js and Express, and data storage with MongoDB. You will also work with Git, authentication and deployment.</p></div>
                         </details>
-                        <details class="course-module" data-lessons="10" data-minutes="360">
-                            <summary><span class="course-module__number">04</span><span class="course-module__title">React.js - Frontend Development</span><span class="course-module__meta"><span>10 Lessons</span><span>6h 00m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Reusable components, JSX and props</li><li><i class="ti ti-player-play" aria-hidden="true"></i>State, effects, hooks and form interactions</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Routing, API integration and frontend project structure</li></ul></div>
+                        <details class="course-faq" name="fullstack-faq">
+                            <summary><span class="course-faq__question">Can I explore a course preview?</span><span class="course-faq__toggle" aria-hidden="true"></span></summary>
+                            <div class="course-faq__answer"><p>Yes. Select Explore Course Preview to see frontend, backend and database examples, and how they connect in a full-stack project. The preview lets you switch between all three areas.</p></div>
                         </details>
-                        <details class="course-module" data-lessons="8" data-minutes="330">
-                            <summary><span class="course-module__number">05</span><span class="course-module__title">Node.js &amp; Express.js - Backend Development</span><span class="course-module__meta"><span>8 Lessons</span><span>5h 30m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Create routes, middleware and REST APIs</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Validate data and handle errors consistently</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Connect services, authentication and application logic</li></ul></div>
+                        <details class="course-faq" name="fullstack-faq">
+                            <summary><span class="course-faq__question">Will I receive a certificate?</span><span class="course-faq__toggle" aria-hidden="true"></span></summary>
+                            <div class="course-faq__answer"><p>The course includes a certificate of completion after you complete the required learning activities and project work. Contact our team if you have questions about completion requirements.</p></div>
                         </details>
-                        <details class="course-module" data-lessons="6" data-minutes="220">
-                            <summary><span class="course-module__number">06</span><span class="course-module__title">Database with MongoDB</span><span class="course-module__meta"><span>6 Lessons</span><span>3h 40m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Model documents, collections and relationships</li><li><i class="ti ti-player-play" aria-hidden="true"></i>CRUD operations, queries and indexes</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Connect your database to an Express application</li></ul></div>
-                        </details>
-                        <details class="course-module" data-lessons="5" data-minutes="140">
-                            <summary><span class="course-module__number">07</span><span class="course-module__title">Authentication &amp; Security</span><span class="course-module__meta"><span>5 Lessons</span><span>2h 20m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>User authentication and authorization concepts</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Protect routes and validate user input</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Handle credentials, sessions and secure configuration</li></ul></div>
-                        </details>
-                        <details class="course-module" data-lessons="6" data-minutes="390">
-                            <summary><span class="course-module__number">08</span><span class="course-module__title">Project Development - Build a Real App</span><span class="course-module__meta"><span>6 Lessons</span><span>6h 30m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Plan a complete full-stack project</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Connect React, APIs and persistent data</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Test, debug and polish your project for a portfolio</li></ul></div>
-                        </details>
-                        <details class="course-module" data-lessons="4" data-minutes="190">
-                            <summary><span class="course-module__number">09</span><span class="course-module__title">Deployment &amp; DevOps Basics</span><span class="course-module__meta"><span>4 Lessons</span><span>3h 10m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Collaborative Git workflows and project environments</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Build checks, deployment configuration and CI/CD</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Monitor and troubleshoot your deployed application</li></ul></div>
-                        </details>
-                        <details class="course-module" data-lessons="3" data-minutes="240">
-                            <summary><span class="course-module__number">10</span><span class="course-module__title">Career Preparation &amp; Next Steps</span><span class="course-module__meta"><span>3 Lessons</span><span>4h 00m</span></span><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                            <div class="course-module__body"><p>Module topics</p><ul><li><i class="ti ti-player-play" aria-hidden="true"></i>Present your projects and explain technical decisions</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Practice developer interviews and problem solving</li><li><i class="ti ti-player-play" aria-hidden="true"></i>Prepare your portfolio and plan your next learning steps</li></ul></div>
+                        <details class="course-faq" name="fullstack-faq">
+                            <summary><span class="course-faq__question">What kind of projects will I build?</span><span class="course-faq__toggle" aria-hidden="true"></span></summary>
+                            <div class="course-faq__answer"><p>You will work on responsive interfaces, connect React to APIs, model data with MongoDB and bring the layers together in a complete full-stack application. Explore the project preview to see how the pieces fit together.</p></div>
                         </details>
                     </div>
+                    <div class="course-faqs__help">
+                        <span class="course-faqs__help-icon"><i class="ti ti-headset" aria-hidden="true"></i></span>
+                        <div><strong>Still have a question?</strong><p>Our team can help you find the right next step.</p></div>
+                        <a class="course-faqs__contact" href="contact.html#contact-form">Talk to our team<i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>
+                    </div>
                 </section>
-                <details id="course-faqs" class="course-section course-faqs">
-                    <summary><h2>Frequently Asked Questions</h2><i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-                    <div class="course-faqs__body"><details class="course-faq"><summary>Is this course suitable for beginners?</summary><p>Yes. The curriculum begins with web development foundations before moving into JavaScript, React, APIs and databases. You can build up your skills one module at a time.</p></details><details class="course-faq"><summary>What do I need to get started?</summary><p>You will need a laptop or desktop computer, a modern browser, a code editor and an internet connection. The opening module walks through setting up your development tools.</p></details><details class="course-faq"><summary>How much learning content is included?</summary><p>The course contains 10 modules, 62 lessons and 40 hours of learning content. Your practice and project time will depend on your current experience and learning pace.</p></details><details class="course-faq"><summary>Can I explore a course preview?</summary><p>Yes. Use Course Preview to explore frontend, backend and database examples and see how the three parts connect in a full-stack project.</p></details><details class="course-faq"><summary>Will I receive a certificate?</summary><p>The course includes a certificate of completion after you complete the required learning activities and project work.</p></details><details class="course-faq"><summary>What kind of projects will I build?</summary><p>You will build responsive interfaces, connect React to APIs, model data with MongoDB and bring the layers together in a complete full-stack application.</p></details></div>
-                </details>
             </div>
             <aside class="course-sidebar" aria-label="Course information and instructor">
                 <section class="course-info-card" aria-labelledby="course-info-title">
@@ -182,9 +172,9 @@
                         <h3>Your Full Stack Learning Path</h3>
                         <p>From your first interface to a complete, deployed web application.</p>
                         <dl class="course-info-facts"><div><dt>Modules</dt><dd>10</dd></div><div><dt>Lessons</dt><dd>62</dd></div><div><dt>Content</dt><dd>40 Hours</dd></div><div><dt>Level</dt><dd>Beginner</dd></div></dl>
-                        <a class="course-info-link" href="#course-curriculum">Explore the Curriculum<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+                        <a class="course-info-link" href="#course-learning">View Learning Outcomes<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
                     </div>
-                    <div class="course-inclusions"><h3>This Course Includes</h3><ul><li><i class="ti ti-video" aria-hidden="true"></i><span data-course-lesson-count>62 Video Lessons</span></li><li><i class="ti ti-clock" aria-hidden="true"></i><span data-course-hours>40 Hours of Content</span></li><li><i class="ti ti-code" aria-hidden="true"></i><span>10 Real-World Projects</span></li><li><i class="ti ti-download" aria-hidden="true"></i><span>Downloadable Resources</span></li><li><i class="ti ti-certificate" aria-hidden="true"></i><span>Certificate of Completion</span></li><li><i class="ti ti-infinity" aria-hidden="true"></i><span>Lifetime Access</span></li><li><i class="ti ti-device-desktop" aria-hidden="true"></i><span>Access on Mobile & Desktop</span></li></ul></div>
+                    <div class="course-inclusions"><h3>This Course Includes</h3><ul><li><i class="ti ti-video" aria-hidden="true"></i><span>62 Video Lessons</span></li><li><i class="ti ti-clock" aria-hidden="true"></i><span>40 Hours of Content</span></li><li><i class="ti ti-code" aria-hidden="true"></i><span>10 Real-World Projects</span></li><li><i class="ti ti-download" aria-hidden="true"></i><span>Downloadable Resources</span></li><li><i class="ti ti-certificate" aria-hidden="true"></i><span>Certificate of Completion</span></li><li><i class="ti ti-infinity" aria-hidden="true"></i><span>Lifetime Access</span></li><li><i class="ti ti-device-desktop" aria-hidden="true"></i><span>Access on Mobile & Desktop</span></li></ul></div>
                 </section>
                 <section id="course-instructor" class="course-instructor" aria-labelledby="course-instructor-title">
                     <h2 id="course-instructor-title">Instructor</h2>
@@ -196,38 +186,19 @@
         <div class="software-container">
             <section class="course-benefits" aria-labelledby="course-benefits-title"><h2 id="course-benefits-title">Why Learn <span>Full Stack Web Development?</span></h2><div class="course-benefits__item"><i class="ti ti-briefcase" aria-hidden="true"></i><span>Job-Ready<br>Skills</span></div><div class="course-benefits__item"><i class="ti ti-code" aria-hidden="true"></i><span>Real-World<br>Projects</span></div><div class="course-benefits__item"><i class="ti ti-users" aria-hidden="true"></i><span>Expert<br>Mentorship</span></div><div class="course-benefits__item"><i class="ti ti-certificate" aria-hidden="true"></i><span>Certificate<br>of Completion</span></div><div class="course-benefits__item"><i class="ti ti-rocket" aria-hidden="true"></i><span>Placement<br>Assistance</span></div></section>
             <section id="course-projects" class="course-project-banner" aria-labelledby="course-projects-title">
-                <div class="course-project-banner__copy"><span class="course-banner-eyebrow">LEARN BY BUILDING</span><h2 id="course-projects-title">One idea.<br><span>A complete full-stack project.</span></h2><p>Design the interface, connect your APIs and bring your data to life. See how every skill fits into a real application.</p><a class="course-banner-link course-banner-link--blue" href="#course-curriculum">Explore Project Modules<i class="ti ti-arrow-right" aria-hidden="true"></i></a></div>
+                <div class="course-project-banner__copy"><span class="course-banner-eyebrow">LEARN BY BUILDING</span><h2 id="course-projects-title">One idea.<br><span>A complete full-stack project.</span></h2><p>Design the interface, connect your APIs and bring your data to life. See how every skill fits into a real application.</p><button class="course-banner-link course-banner-link--blue" type="button" data-course-preview aria-haspopup="dialog" aria-controls="course-preview-dialog">Explore Project Preview<i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
                 <div class="course-project-visual" aria-hidden="true">
                     <div class="course-stack-card course-stack-card--frontend"><span class="course-stack-card__label">FRONTEND</span><i class="ti ti-brand-react"></i><strong>Build the experience</strong><div class="course-stack-lines"><b></b><b></b><b></b></div></div>
                     <div class="course-stack-card course-stack-card--backend"><span class="course-stack-card__label">BACKEND</span><i class="ti ti-brand-nodejs"></i><strong>Connect your API</strong><code>GET /api/projects<br>{ status: "ready" }</code></div>
                     <div class="course-stack-card course-stack-card--data"><span class="course-stack-card__label">DATABASE</span><i class="ti ti-database"></i><strong>Make data work</strong><div class="course-stack-dots"><b></b><b></b><b></b></div></div>
                 </div>
             </section>
-            <div class="course-social-proof">
-                <section id="course-reviews" class="course-reviews" aria-labelledby="course-reviews-title">
-                    <div class="course-reviews__heading"><h2 id="course-reviews-title"><i class="ti ti-star" aria-hidden="true"></i>Student Reviews</h2><span class="course-reviews__score"><i class="ti ti-star-filled" aria-hidden="true"></i><strong>4.8 out of 5</strong> (2,940 Reviews)</span><button id="course-reviews-toggle" class="course-reviews__toggle" type="button" aria-expanded="false" aria-controls="course-review-grid"><span>Read Full Reviews</span><i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                    <div class="course-review-carousel" role="group" aria-roledescription="carousel" aria-label="Student reviews">
-                    <div id="course-review-viewport" class="course-review-viewport" tabindex="0" aria-label="Review slides. Use the left and right arrow keys to navigate.">
-                    <div id="course-review-grid" class="course-review-grid">
-                    <figure class="course-review"><div class="course-review__stars" aria-label="5 out of 5 stars"><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i></div><blockquote>&ldquo;A complete and practical course! The projects really helped me understand how things work in real-world development. I could connect the frontend, backend and database concepts while building something of my own.&rdquo;</blockquote><figcaption class="course-review__author"><span class="course-review__avatar" aria-hidden="true">AD</span><div><strong>Arijit Das</strong><small>Software Developer</small></div></figcaption></figure>
-                    <figure class="course-review"><div class="course-review__stars" aria-label="5 out of 5 stars"><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i></div><blockquote>&ldquo;The explanations are clear and beginner-friendly. I built my own full stack project and got placed within three months. The practical examples made it easier to turn what I learned into a working application.&rdquo;</blockquote><figcaption class="course-review__author"><span class="course-review__avatar" aria-hidden="true">SR</span><div><strong>Sneha Roy</strong><small>Frontend Developer</small></div></figcaption></figure>
-                    <figure class="course-review"><div class="course-review__stars" aria-label="5 out of 5 stars"><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i></div><blockquote>&ldquo;Excellent course with great content and support. The curriculum is well structured and up to date. Working through the projects helped me become more confident in both frontend and backend development.&rdquo;</blockquote><figcaption class="course-review__author"><span class="course-review__avatar" aria-hidden="true">RM</span><div><strong>Rohan Mukherjee</strong><small>Full Stack Developer</small></div></figcaption></figure>
-                    </div>
-                    </div>
-                    <div class="course-review-controls" hidden>
-                        <button type="button" class="course-review-arrow" data-review-prev aria-label="Previous student review" aria-controls="course-review-grid"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
-                        <div class="course-review-dots" role="group" aria-label="Select a student review"></div>
-                        <button type="button" class="course-review-arrow" data-review-next aria-label="Next student review" aria-controls="course-review-grid"><i class="ti ti-arrow-right" aria-hidden="true"></i></button>
-                    </div>
-                    <p id="course-review-status" class="software-sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
-                    </div>
-                </section>
-                <section class="course-related" aria-labelledby="course-related-title"><h2 id="course-related-title"><i class="ti ti-stack-2" aria-hidden="true"></i>Related Courses</h2>
+            <section class="course-related" aria-labelledby="course-related-title"><h2 id="course-related-title"><i class="ti ti-stack-2" aria-hidden="true"></i>Related Courses</h2>
+                    <div class="course-related__grid">
                     <a href="software-development.html#software-course-react" class="course-related__card"><span class="course-related__icon" aria-hidden="true"><i class="ti ti-brand-react"></i></span><div><h3>React.js Development</h3><p><i class="ti ti-star-filled" aria-hidden="true"></i>4.8 (2,310)<i class="ti ti-clock" aria-hidden="true"></i>4 Months</p></div><i class="ti ti-arrow-right" aria-hidden="true"></i></a>
                     <a href="software-development.html#software-course-node" class="course-related__card"><span class="course-related__icon course-related__icon--node" aria-hidden="true"><i class="ti ti-brand-nodejs"></i></span><div><h3>Node.js Development</h3><p><i class="ti ti-star-filled" aria-hidden="true"></i>4.7 (1,490)<i class="ti ti-clock" aria-hidden="true"></i>4 Months</p></div><i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+                    </div>
                 </section>
-            </div>
-            <section class="course-bottom-cta" aria-labelledby="course-bottom-cta-title"><div class="course-laptop" aria-hidden="true"><img src="assets/images/course-details/course-preview.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async"></div><div><span class="course-banner-eyebrow">YOUR NEXT CHAPTER</span><h2 id="course-bottom-cta-title">Ready to Become a <span>Full Stack Developer?</span></h2><p>Discover the complete roadmap from responsive interfaces to APIs, databases and deployment.</p><div class="course-banner-tags" aria-label="Technologies"><span>React</span><span>Node.js</span><span>MongoDB</span></div><a class="course-banner-link" href="#course-curriculum">Explore the Curriculum<i class="ti ti-arrow-right" aria-hidden="true"></i></a></div></section>
         </div>
     </main>
     <dialog id="course-preview-dialog" class="course-dialog course-preview-dialog" aria-labelledby="course-preview-title">
@@ -281,7 +252,6 @@
                         <ul class="site-footer__contacts">
                             <li><span class="site-footer__contact-icon site-footer__contact-icon--phone"><i class="ti ti-phone-filled" aria-hidden="true"></i></span><a href="tel:+919046240277">+91 90462 40277</a></li>
                             <li><span class="site-footer__contact-icon site-footer__contact-icon--email"><i class="ti ti-mail-filled" aria-hidden="true"></i></span><div><a href="mailto:contact@devorionacademy.com">contact@devorionacademy.com</a></div></li>
-                            <li><span class="site-footer__contact-icon site-footer__contact-icon--address"><i class="ti ti-map-pin-filled" aria-hidden="true"></i></span><p>3605 Parker Rd.<br>3890 Poplar Dr.</p></li>
                         </ul>
                     </section>
                     <section class="site-footer__column site-footer__column--social" aria-labelledby="footer-social-title">

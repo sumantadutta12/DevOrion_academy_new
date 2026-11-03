@@ -36,7 +36,6 @@
 .site-footer__contact-icon > i { color: inherit; font-size: 23px; }
 .site-footer__contact-icon--phone { background: #103b50; color: #00e2e5; }
 .site-footer__contact-icon--email { background: #35285e; color: #dba3f4; }
-.site-footer__contact-icon--address { background: #302c3d; color: #ffb381; }
 .site-footer__contacts a, .site-footer__contacts p { display: block; margin: 0; color: #dce1ef; font-size: clamp(13px, 1.03vw, 18px); font-weight: 400; line-height: 1.55; text-decoration: none; overflow-wrap: anywhere; transition: color 180ms ease; }
 .site-footer__column--social { padding-left: clamp(22px, 2.2vw, 38px); border-left: 1px solid rgb(158 179 224 / 20%); }
 .site-footer__social-description { max-width: 320px; margin: 0 0 23px; color: #dce1ef; font-size: clamp(14px, 1.03vw, 18px); font-weight: 400; line-height: 1.55; }

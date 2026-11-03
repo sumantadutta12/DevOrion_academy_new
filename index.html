@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="assets/css/plugins/slick.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/brand-theme.css">
-    <link rel="stylesheet" href="assets/css/featured-courses.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/categories.css">
-    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/mock-interview.css">
     <link rel="stylesheet" href="assets/css/course-finder.css">
+    <link rel="stylesheet" href="assets/css/career-counseling.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/quick-contact.css">
     <link rel="stylesheet" href="assets/css/typography.css">
@@ -49,7 +49,6 @@
     <script src="assets/js/page-loader.js"></script>
 
 
-    <noscript><style>.course-filters, .course-syllabus-button { display: none !important; }</style></noscript>
 
 
     <!-- Scroll To Top Start-->
@@ -73,7 +72,7 @@
                         <li><a class="academy-nav__link" href="about.html">About Us</a></li>
                         <li>
                             <details class="academy-nav__dropdown">
-                                <summary class="academy-nav__link">Courses <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+                                <summary class="academy-nav__link">Program <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
                                 <ul class="academy-nav__submenu">
                                     <li><a href="#courses">Explore All Courses</a></li>
                                     <li><a href="#course-software">Software Development</a></li>
@@ -90,15 +89,17 @@
                                 <summary class="academy-nav__link">Career Support <svg class="academy-nav__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 5.5L8 10.5L13 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
                                 <ul class="academy-nav__submenu">
                                     <li><a href="#learning-paths">Find Your Learning Path</a></li>
+                                    <li><a href="#mock-interviews">Mock Interviews</a></li>
+                                    <li><a href="#career-counseling">Career Counseling</a></li>
                                     <li><a href="contact.html#contact-form">Speak to an Advisor</a></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a class="academy-nav__link" href="student-projects.html">Student Projects</a></li>
+                        <!-- <li><a class="academy-nav__link" href="student-projects.html">Student Projects</a></li> -->
                         <li><a class="academy-nav__link" href="contact.html">Contact Us</a></li>
                     </ul>
                     <div class="academy-nav__actions">
-                        <a class="academy-nav__enquire" href="contact.html#contact-form" data-open-enquiry aria-haspopup="dialog" aria-controls="academy-enquiry">Enquire Now <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+                        <a class="academy-nav__enquire" href="contact.html#contact-form" data-open-enquiry aria-haspopup="dialog" aria-controls="academy-enquiry">Student Portal <span class="academy-nav__enquire-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
                     </div>
                 </div>
             </nav>
@@ -259,7 +260,7 @@
 
     <!-- online courses start -->
     <section id="learning-paths" class="coding-categories" aria-labelledby="categories-title" data-scroll-reveal>
-        <div class="container">
+        <div id="courses" class="container">
             <div class="coding-categories__heading">
                 <div class="coding-categories__intro">
                     <span class="coding-categories__eyebrow section-label">Browse categories</span>
@@ -272,7 +273,7 @@
                 </div>
             </div>
             <div id="category-grid" class="coding-categories__grid">
-                <a class="coding-category coding-category--software" href="software-development.html" aria-label="Explore Software Development courses">
+                <a id="course-software" class="coding-category coding-category--software" href="full-stack-web-development.html" aria-label="Software Development: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -283,7 +284,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-code" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">01</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Code &amp; create</span>
@@ -295,7 +295,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--web" href="#courses" aria-label="Explore Web Development courses">
+                <a id="course-web" class="coding-category coding-category--web" href="full-stack-web-development.html" aria-label="Web Development: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -304,9 +304,8 @@
                         <path class="category-wave category-wave--lower" d="M207 446C259 382 231 344 278 323C322 304 341 276 332 239C365 330 368 379 350 446Z"/>
                         <path class="category-wave__line" d="M194-18C211 75 298 157 420 134M420 132C341 126 285 174 299 239C311 298 278 323 241 317M420 184C351 176 317 232 338 282"/>
                     </svg>
-                    <div class="coding-category__top">
+                    <div id="course-react" class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-world-code" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">02</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Build for the web</span>
@@ -318,7 +317,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--design" href="#courses" aria-label="Explore Web Design courses">
+                <a id="course-design" class="coding-category coding-category--design" href="full-stack-web-development.html" aria-label="Web Design: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -329,7 +328,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-browser" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">03</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Make it memorable</span>
@@ -341,7 +339,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--ux" href="#courses" aria-label="Explore UI/UX Design courses">
+                <a id="course-ux" class="coding-category coding-category--ux" href="full-stack-web-development.html" aria-label="UI/UX Design: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -352,7 +350,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-brand-figma" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">04</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Design with purpose</span>
@@ -364,7 +361,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--mobile" href="#courses" aria-label="Explore Mobile App Development courses">
+                <a class="coding-category coding-category--mobile" href="full-stack-web-development.html" aria-label="Mobile App Development: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -375,7 +372,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-device-mobile-code" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">05</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Think beyond desktop</span>
@@ -387,7 +383,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--python" href="#courses" aria-label="Explore Python Programming courses">
+                <a id="course-python" class="coding-category coding-category--python" href="full-stack-web-development.html" aria-label="Python Programming: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -398,7 +394,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-brand-python" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">06</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Small steps. Big ideas.</span>
@@ -410,7 +405,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--data" href="#courses" aria-label="Explore Data &amp; Databases courses">
+                <a class="coding-category coding-category--data" href="full-stack-web-development.html" aria-label="Data &amp; Databases: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -421,7 +416,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-database" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">07</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Connect the dots</span>
@@ -433,7 +427,7 @@
                         <span class="coding-category__arrow" aria-hidden="true"><i class="ti ti-arrow-up-right"></i></span>
                     </div>
                 </a>
-                <a class="coding-category coding-category--cloud" href="#courses" aria-label="Explore DevOps &amp; Cloud courses">
+                <a class="coding-category coding-category--cloud" href="full-stack-web-development.html" aria-label="DevOps &amp; Cloud: view Full Stack Web Development details">
                     <svg class="coding-category__ornament" viewBox="0 0 400 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
                         <path class="category-wave category-wave--top" d="M194-18C211 75 298 157 420 134V-18Z"/>
                         <path class="category-wave category-wave--petal" d="M199-12C206 38 223 81 253 71C286 60 309 27 329-12Z"/>
@@ -444,7 +438,6 @@
                     </svg>
                     <div class="coding-category__top">
                         <span class="coding-category__icon"><i class="ti ti-cloud-code" aria-hidden="true"></i></span>
-                        <span class="coding-category__number" aria-hidden="true">08</span>
                     </div>
                     <div class="coding-category__body">
                         <span class="coding-category__eyebrow">Build. Ship. Scale.</span>
@@ -461,159 +454,65 @@
     </section>
     <!-- online courses end -->
 
-    <!-- about section start -->
-    <section id="about" class="about-edufast" aria-labelledby="about-title" data-scroll-reveal>
-        <div class="about-edufast__layout">
-            <div class="about-edufast__visual">
-                <svg class="about-edufast__backdrop" viewBox="0 0 700 740" preserveAspectRatio="none" aria-hidden="true">
-                    <defs><linearGradient id="about-blue-shape" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcecff"/><stop offset=".5" stop-color="#8cbcff"/><stop offset="1" stop-color="#367fff"/></linearGradient></defs>
-                    <path d="M95 171C184 153 212 79 303 37C415-15 520 12 568 109C615 202 695 193 690 326C685 416 651 478 667 568C690 690 544 726 444 702C325 671 275 760 157 715C48 675 17 576 57 487C98 395-13 382 24 279C41 231 64 191 95 171Z" fill="#edf5ff"/>
-                    <path d="M89 204C117 105 253 27 367 49C470 69 560 170 597 253C629 326 669 404 632 483C596 564 609 647 514 681C401 724 355 691 279 646C196 597 49 631 20 520C-5 423 89 388 71 313C57 254 71 236 89 204Z" fill="url(#about-blue-shape)"/>
-                    <path d="M659 196C718 254 662 304 637 340" stroke="#4689ff" stroke-width="3" stroke-linecap="round" fill="none"/>
-                </svg>
-                <span class="about-edufast__dots" aria-hidden="true"></span>
-                <div class="about-edufast__photo"><img src="assets/images/common/excelent2.jpg" alt="Three students learning and working together on a laptop" width="526" height="665" loading="lazy" decoding="async"></div>
-                <span class="about-edufast__idea" aria-hidden="true"><i class="ti ti-bulb"></i></span>
-                <div class="about-metric about-metric--reviews">
-                    <span class="about-metric__icon" aria-hidden="true"><i class="ti ti-star-filled"></i></span>
-                    <div><strong>4.9 <span>(8.6K)</span></strong><p>AVG Reviews</p></div>
-                </div>
-                <div class="about-metric about-metric--offer">
-                    <span class="about-metric__icon" aria-hidden="true"><i class="ti ti-school"></i></span>
-                    <div><strong>20% OFF</strong><p>For All Courses</p></div>
-                </div>
-                <div class="about-satisfaction">
-                    <div class="about-satisfaction__gauge" aria-hidden="true">
-                        <svg viewBox="0 0 180 110" fill="none"><defs><linearGradient id="about-satisfaction-fill" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff4b08"/><stop offset=".75" stop-color="#ff4b08"/><stop offset="1" stop-color="#ffb18c"/></linearGradient></defs><path d="M16 94A74 74 0 0 1 164 94" stroke="#eeeeef" stroke-width="11" stroke-linecap="round"/><path d="M16 94A74 74 0 0 1 164 94" stroke="url(#about-satisfaction-fill)" stroke-width="11" stroke-linecap="round" pathLength="100" stroke-dasharray="90 100"/></svg>
-                        <img src="assets/images/common/worldcup.png" alt="" width="40" height="40" loading="lazy">
-                        <span>90%</span>
-                    </div>
-                    <strong>Excellent</strong>
-                    <p>90% Satisfied Clients</p>
-                </div>
-            </div>
-            <div class="about-edufast__content">
-                <span class="about-edufast__eyebrow section-label">About Edufast</span>
-                <div class="about-edufast__heading">
-                    <h2 id="about-title" class="about-edufast__title section-heading">The place where<br>you can <span>achieve.<svg viewBox="0 0 230 24" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M4 16C76-13 151 42 225 9" stroke="#a4c7ff" stroke-width="5" stroke-linecap="round"/><path d="M118 16C153 25 193 23 225 9" stroke="#2276ff" stroke-width="5" stroke-linecap="round"/></svg></span></h2>
-                    <span class="about-edufast__spark" aria-hidden="true"></span>
-                </div>
-                <p class="about-edufast__intro">Our story is a journey of passion, commitment, and dedication to empowering learners like you.</p>
-                <ul class="about-edufast__list">
-                    <li>
-                        <span class="about-edufast__icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M6 40V29H14V40M20 40V22H28V40M34 40V13H42V40M5 40H43M8 23L20 14L27 17L40 5M31 5H40V14" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        <div><h3>Our Mission</h3><p>Discover how Edufast collaboratively crafts learning experiences that go beyond the ordinary, shaping your educational journey uniquely.</p></div>
-                    </li>
-                    <li>
-                        <span class="about-edufast__icon about-edufast__icon--vision" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M5 41L18 20L27 31L32 25L44 41H5ZM18 20L24 28M26 22V5M26 6H39L35 11L39 16H26" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        <div><h3>Our Vision</h3><p>Discover how Edufast collaboratively crafts learning experiences that go beyond the ordinary, shaping your educational journey uniquely.</p></div>
-                    </li>
-                </ul>
-                <details class="about-edufast__more">
-                    <summary class="about-edufast__link">Read More<span aria-hidden="true"><i class="ti ti-arrow-right"></i></span></summary>
-                    <div class="about-edufast__details"><p>Explore practical learning paths in software development, web development, and design. Discover courses that help you turn new skills into projects of your own.</p><a href="#courses">Explore our courses <i class="ti ti-arrow-right" aria-hidden="true"></i></a></div>
-                </details>
-            </div>
-        </div>
-    </section>
-    <!-- about section end -->
-
-    <!-- explore courses Start -->
-    <section id="courses" class="featured-learning" aria-labelledby="featured-courses-title" data-scroll-reveal>
+    <!-- mock interviews start -->
+    <section id="mock-interviews" class="mock-interview" aria-labelledby="mock-interview-title" data-scroll-reveal>
         <div class="container">
-            <div class="featured-learning__header">
-                <div class="featured-learning__intro">
-                    <span class="featured-learning__eyebrow section-label">Featured courses</span>
-                    <h2 id="featured-courses-title" class="section-heading">Find your next <em>skill.</em></h2>
-                    <p>Learn the tools. Build real projects. Create something you're proud of.</p>
-                </div>
-                <div class="featured-learning__tools">
-                    <div class="course-filters" role="group" aria-label="Filter featured courses">
-                        <button type="button" class="course-filter" data-course-filter="all" aria-label="All courses, 6 courses" aria-pressed="true" aria-controls="featured-courses-grid"><i class="ti ti-layout-grid" aria-hidden="true"></i><span>All courses</span><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
-                        <button type="button" class="course-filter" data-course-filter="development" aria-label="Development, 4 courses" aria-pressed="false" aria-controls="featured-courses-grid"><i class="ti ti-code" aria-hidden="true"></i><span>Development</span><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
-                        <button type="button" class="course-filter" data-course-filter="design" aria-label="Design, 2 courses" aria-pressed="false" aria-controls="featured-courses-grid"><i class="ti ti-pencil" aria-hidden="true"></i><span>Design</span><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+            <div class="mock-interview__layout">
+                <div class="mock-interview__copy">
+                    <span class="mock-interview__eyebrow section-label">Mock Interviews</span>
+                    <h2 id="mock-interview-title" class="mock-interview__title section-heading">Great interviews<br>start with<br><em>better practice.</em></h2>
+                    <p class="mock-interview__description">Turn interview nerves into a clear game plan. Practice your answers, talk through your projects, and find your confidence before the real conversation.</p>
+                    <ul class="mock-interview__benefits" aria-label="Your interview preparation">
+                        <li><span class="mock-interview__benefit-icon"><i class="ti ti-code" aria-hidden="true"></i></span><div><strong>Think clearly. Solve confidently.</strong><p>Work through technical questions and explain your approach.</p></div></li>
+                        <li><span class="mock-interview__benefit-icon mock-interview__benefit-icon--warm"><i class="ti ti-messages" aria-hidden="true"></i></span><div><strong>Tell your story with purpose.</strong><p>Practice HR conversations and bring your projects to life.</p></div></li>
+                        <li><span class="mock-interview__benefit-icon"><i class="ti ti-target-arrow" aria-hidden="true"></i></span><div><strong>Know what to work on next.</strong><p>Turn focused feedback into practical next steps.</p></div></li>
+                    </ul>
+                    <div class="mock-interview__actions">
+                        <a class="mock-interview__book" href="https://wa.me/919046240277?text=Hello%20DevOrion%20Academy%21%20I%20would%20like%20to%20book%20a%20mock%20interview.%20Please%20help%20me%20choose%20a%20suitable%20round%20and%20discuss%20availability." target="_blank" rel="noopener noreferrer" aria-label="Book a mock interview, opens WhatsApp in a new tab">Book a mock interview<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a class="mock-interview__process-link" href="#interview-process">See the process<i class="ti ti-arrow-down" aria-hidden="true"></i></a>
                     </div>
+                    <p class="mock-interview__booking-note">Connect with our team on WhatsApp to discuss your role and availability.</p>
+                </div>
+                <div class="mock-interview__preview" aria-label="Explore sample mock interview rounds">
+                    <div class="mock-interview__room">
+                        <div class="mock-interview__room-head"><span class="mock-interview__room-brand"><i class="ti ti-briefcase" aria-hidden="true"></i>The interview lab</span><span class="mock-interview__preview-label">Practice preview</span></div>
+                        <div class="mock-interview__tabs" role="tablist" aria-label="Explore interview rounds">
+                            <button id="interview-tab-technical" class="mock-interview__tab" type="button" role="tab" aria-selected="true" aria-controls="interview-panel-technical" tabindex="0"><i class="ti ti-code" aria-hidden="true"></i>Technical</button>
+                            <button id="interview-tab-hr" class="mock-interview__tab" type="button" role="tab" aria-selected="false" aria-controls="interview-panel-hr" tabindex="-1"><i class="ti ti-messages" aria-hidden="true"></i>HR &amp; behavioral</button>
+                            <button id="interview-tab-project" class="mock-interview__tab" type="button" role="tab" aria-selected="false" aria-controls="interview-panel-project" tabindex="-1"><i class="ti ti-presentation" aria-hidden="true"></i>Project review</button>
+                        </div>
+                        <div id="interview-panel-technical" class="mock-interview__panel" role="tabpanel" aria-labelledby="interview-tab-technical" tabindex="0">
+                            <p class="mock-interview__round">Technical thinking</p>
+                            <h3>Good answers start with<br>a clear approach.</h3>
+                            <div class="mock-interview__question"><span>Try this sample question</span><p>How would you find the first non-repeating character in a string?</p></div>
+                            <ul class="mock-interview__focus" aria-label="Technical feedback focus"><li>Problem solving</li><li>Trade-offs</li><li>Code clarity</li></ul>
+                        </div>
+                        <div id="interview-panel-hr" class="mock-interview__panel" role="tabpanel" aria-labelledby="interview-tab-hr" tabindex="0" hidden>
+                            <p class="mock-interview__round">Your story, clearly told</p>
+                            <h3>Make your experience<br>mean something.</h3>
+                            <div class="mock-interview__question"><span>Try this sample question</span><p>Tell me about a time you faced a setback. What did you do, and what did you learn?</p></div>
+                            <ul class="mock-interview__focus" aria-label="HR feedback focus"><li>Answer structure</li><li>Communication</li><li>Self-awareness</li></ul>
+                        </div>
+                        <div id="interview-panel-project" class="mock-interview__panel" role="tabpanel" aria-labelledby="interview-tab-project" tabindex="0" hidden>
+                            <p class="mock-interview__round">Show the thinking behind it</p>
+                            <h3>You built it.<br>Now make it stand out.</h3>
+                            <div class="mock-interview__question"><span>Try this sample question</span><p>Walk me through a project you built. Which decision was the hardest, and why?</p></div>
+                            <ul class="mock-interview__focus" aria-label="Project feedback focus"><li>Project ownership</li><li>Technical decisions</li><li>Storytelling</li></ul>
+                        </div>
+                        <div class="mock-interview__coach"><i class="ti ti-bulb" aria-hidden="true"></i><p><strong>It&rsquo;s more than the right answer.</strong><br>Practice showing how you think, communicate, and grow.</p></div>
+                    </div>
+                    <div class="mock-interview__takeaway"><span class="mock-interview__takeaway-icon"><i class="ti ti-check" aria-hidden="true"></i></span><div><small>Your next step, clearer</small><p>Know your strengths. Build on your feedback.</p></div><i class="ti ti-arrow-up-right" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <p class="course-filter-status" role="status" aria-live="polite"></p>
-            <div id="featured-courses-grid" class="featured-learning__grid">
-                <article id="course-software" class="featured-course featured-course--software" data-course-id="software" data-course-category="development">
-                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/software.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
-                    <div class="featured-course__body">
-                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-code" aria-hidden="true"></i> Software development</span><span class="featured-course__level">Beginner</span></div>
-                        <h3>Software Development Essentials</h3>
-                        <p class="featured-course__description">Build a strong foundation in programming, problem solving, and clean, maintainable code.</p>
-                        <div class="featured-course__skills" aria-label="Course topics"><span>Programming</span><span>OOP</span><span>Problem solving</span></div>
-                    </div>
-                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Software Development Essentials">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                </article>
-                <article id="course-web" class="featured-course featured-course--web" data-course-id="web" data-course-category="development">
-                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/web.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
-                    <div class="featured-course__body">
-                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-world-code" aria-hidden="true"></i> Web development</span><span class="featured-course__level">Intermediate</span></div>
-                        <h3>Full-Stack Web Development</h3>
-                        <p class="featured-course__description">Bring a complete web app to life, from responsive interfaces to APIs and databases.</p>
-                        <div class="featured-course__skills" aria-label="Course topics"><span>JavaScript</span><span>APIs</span><span>Databases</span></div>
-                    </div>
-                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Full-Stack Web Development">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                </article>
-                <article id="course-ux" class="featured-course featured-course--ux" data-course-id="ux" data-course-category="design">
-                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/ux.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
-                    <div class="featured-course__body">
-                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-pencil" aria-hidden="true"></i> UI/UX design</span><span class="featured-course__level">Beginner</span></div>
-                        <h3>UI/UX Design with Figma</h3>
-                        <p class="featured-course__description">Turn user insights into thoughtful interfaces, reusable components, and interactive prototypes.</p>
-                        <div class="featured-course__skills" aria-label="Course topics"><span>Figma</span><span>User research</span><span>Prototyping</span></div>
-                    </div>
-                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for UI/UX Design with Figma">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                </article>
-                <article id="course-python" class="featured-course featured-course--python" data-course-id="python" data-course-category="development">
-                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/python.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
-                    <div class="featured-course__body">
-                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-brand-python" aria-hidden="true"></i> Python programming</span><span class="featured-course__level">Beginner</span></div>
-                        <h3>Python Programming Foundations</h3>
-                        <p class="featured-course__description">Write your first Python programs and automate everyday tasks with clear, practical code.</p>
-                        <div class="featured-course__skills" aria-label="Course topics"><span>Python</span><span>Automation</span><span>Scripting</span></div>
-                    </div>
-                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Python Programming Foundations">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                </article>
-                <article id="course-design" class="featured-course featured-course--design" data-course-id="design" data-course-category="design">
-                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/design.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
-                    <div class="featured-course__body">
-                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-browser" aria-hidden="true"></i> Web design</span><span class="featured-course__level">Beginner</span></div>
-                        <h3>Responsive Web Design</h3>
-                        <p class="featured-course__description">Create polished websites with strong typography, thoughtful layouts, and accessible design.</p>
-                        <div class="featured-course__skills" aria-label="Course topics"><span>HTML &amp; CSS</span><span>Layouts</span><span>Accessibility</span></div>
-                    </div>
-                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Responsive Web Design">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                </article>
-                <article id="course-react" class="featured-course featured-course--react" data-course-id="react" data-course-category="development">
-                    <div class="course-cover" aria-hidden="true"><img src="assets/images/courses/react.webp" alt="" width="1024" height="512" loading="lazy" decoding="async"></div>
-                    <div class="featured-course__body">
-                        <div class="featured-course__meta"><span class="featured-course__category"><i class="ti ti-brand-react" aria-hidden="true"></i> Frontend development</span><span class="featured-course__level">Intermediate</span></div>
-                        <h3>Build Interactive Apps with React</h3>
-                        <p class="featured-course__description">Create reusable components and responsive experiences with modern React and JavaScript.</p>
-                        <div class="featured-course__skills" aria-label="Course topics"><span>React</span><span>Components</span><span>State &amp; hooks</span></div>
-                    </div>
-                    <div class="featured-course__footer"><span class="featured-course__format"><i class="ti ti-book" aria-hidden="true"></i> Project-based learning</span><button type="button" class="course-syllabus-button" aria-haspopup="dialog" aria-controls="course-preview" aria-label="View syllabus for Build Interactive Apps with React">View syllabus <i class="ti ti-arrow-right" aria-hidden="true"></i></button></div>
-                </article>
-            </div>
+            <ol id="interview-process" class="mock-interview__steps" aria-label="How mock interview preparation works">
+                <li><span class="mock-interview__step-icon" aria-hidden="true"><i class="ti ti-target-arrow"></i></span><div><h3>Choose your focus</h3><p>Share your target role and the areas you want to practice.</p></div></li>
+                <li><span class="mock-interview__step-icon mock-interview__step-icon--warm" aria-hidden="true"><i class="ti ti-messages"></i></span><div><h3>Practice the conversation</h3><p>Work through questions and talk through your thinking.</p></div></li>
+                <li><span class="mock-interview__step-icon" aria-hidden="true"><i class="ti ti-trending-up"></i></span><div><h3>Refine. Repeat. Feel ready.</h3><p>Use your feedback to prepare for the next opportunity.</p></div></li>
+            </ol>
         </div>
-        <dialog id="course-preview" class="course-dialog" aria-labelledby="course-preview-title">
-            <button type="button" class="course-dialog__close" aria-label="Close course preview" autofocus><i class="ti ti-x" aria-hidden="true"></i></button>
-            <div class="course-dialog__content">
-                <span class="course-dialog__category"></span>
-                <h2 id="course-preview-title"></h2>
-                <p class="course-dialog__description"></p>
-                <div class="course-dialog__skills"></div>
-                <h3>What you'll explore</h3>
-                <ul class="course-dialog__topics"></ul>
-                <div class="course-dialog__project"><span>PUT IT INTO PRACTICE</span><strong></strong></div>
-                <button type="button" class="course-dialog__back">Keep exploring <i class="ti ti-arrow-right" aria-hidden="true"></i></button>
-            </div>
-        </dialog>
+        <noscript><style>.mock-interview__tabs { display: none; }.mock-interview__panel[hidden] { display: block !important; }.mock-interview__panel + .mock-interview__panel { margin-top: 28px; }</style></noscript>
     </section>
-    <!-- explore courses end -->
+    <!-- mock interviews end -->
 
     <!-- course finder start -->
     <section id="course-finder" class="course-finder" aria-labelledby="course-finder-title" data-scroll-reveal>
@@ -639,149 +538,50 @@
     </section>
     <!-- course finder end -->
 
-  
-
-
-    <!-- testimonial start -->
-    <section id="student-stories" class="testimonial__one student-voices pt-120 pb-120" aria-labelledby="testimonials-title" data-scroll-reveal>
+    <!-- career counseling start -->
+    <section id="career-counseling" class="career-counseling" aria-labelledby="career-counseling-title" data-scroll-reveal>
         <div class="container">
-            <div class="student-voices__heading">
-                <span class="student-voices__eyebrow section-label">Student Voices</span>
-                <h2 id="testimonials-title" class="section-heading">What Our <span>Students Say.</span></h2>
-                <p class="student-voices__description">Every learning journey has a story. Hear from our students about building new skills, exploring ideas, and learning with DevOrion Academy.</p>
-            </div>
-            <div class="swiper testimonial__onewrap">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testi__oneitem radius32 py-5 py-xxl-8 px-4 px-xxl-8 position-relative">
-                           <ul class="ratting d-flex align-items-center gap-1 gap-xl-2">
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20e s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-half-filled fs20 s1-color"></i>
-                                </li>
-                            </ul>
-                            <p class="mb-5 mt-8 mb-xxl-8 pragraph n700-color">
-                                "I can't thank enough for the incredible courses they offer. I completed the 'Web Development Fundamentals' course, and it not only gave me the skills.”
-                            </p>
-                            <div class="d-flex align-items-center gap-2 gap-xxl-6">
-                                <img src="assets/images/common/cameron.png" alt="img" class="radius100">
-                                <div class="cont">
-                                    <span class="n700-color cameron d-block mb-0 mb-xl-1">
-                                        Cameron Williamson
-                                    </span>
-                                    <span class="fs-seven n700-color">
-                                        Software Tester
-                                    </span>
-                                </div>
-                            </div>
-                            <img src="assets/images/vectors/vector-white.png" alt="img" class="cmn__white">
-                            <a href="#0" class="quote radius100 d-flex align-items-center justify-content-center">
-                                <i class="ti ti-quote fs-five n700-color"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testi__oneitem radius32 py-5 py-xxl-8 px-4 px-xxl-8 position-relative">
-                           <ul class="ratting d-flex align-items-center gap-1 gap-xl-2">
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20e s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-half-filled fs20 s1-color"></i>
-                                </li>
-                            </ul>
-                            <p class="mb-5 mt-8 mb-xxl-8 pragraph n700-color">
-                                "I can't thank enough for the incredible courses they offer. I completed the 'Web Development Fundamentals' course, and it not only gave me the skills.”
-                            </p>
-                            <div class="d-flex align-items-center gap-2 gap-xxl-6">
-                                <img src="assets/images/common/cameron.png" alt="img" class="radius100">
-                                <div class="cont">
-                                    <span class="n700-color cameron d-block mb-0 mb-xl-1">
-                                        Courtney Henry
-                                    </span>
-                                    <span class="fs-seven n700-color">
-                                        Project Manager
-                                    </span>
-                                </div>
-                            </div>
-                            <img src="assets/images/vectors/vector-white.png" alt="img" class="cmn__white">
-                            <a href="#0" class="quote radius100 d-flex align-items-center justify-content-center">
-                                <i class="ti ti-quote fs-five n700-color"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testi__oneitem radius32 py-5 py-xxl-8 px-4 px-xxl-8 position-relative">
-                           <ul class="ratting d-flex align-items-center gap-1 gap-xl-2">
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20 s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-filled fs20e s1-color"></i>
-                                </li>
-                                <li>
-                                    <i class="ti ti-star-half-filled fs20 s1-color"></i>
-                                </li>
-                            </ul>
-                            <p class="mb-5 mt-8 mb-xxl-8 pragraph n700-color">
-                                "I can't thank enough for the incredible courses they offer. I completed the 'Web Development Fundamentals' course, and it not only gave me the skills.”
-                            </p>
-                            <div class="d-flex align-items-center gap-2 gap-xxl-6">
-                                <img src="assets/images/common/cameron.png" alt="img" class="radius100">
-                                <div class="cont">
-                                    <span class="n700-color cameron d-block mb-0 mb-xl-1">
-                                        Courtney Henry
-                                    </span>
-                                    <span class="fs-seven n700-color">
-                                        Project Manager
-                                    </span>
-                                </div>
-                            </div>
-                            <img src="assets/images/vectors/vector-white.png" alt="img" class="cmn__white">
-                            <a href="#0" class="quote radius100 d-flex align-items-center justify-content-center">
-                                <i class="ti ti-quote fs-five n700-color"></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="career-counseling__layout">
+                <div class="career-counseling__visual">
+                    <svg class="career-counseling__orbit" viewBox="0 0 550 650" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M62 502C-16 362 43 102 253 41c207-60 322 179 235 367-74 161-281 238-401 119" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 7"/><path d="M39 463C-7 304 90 72 281 62c170-8 270 206 190 363" stroke="currentColor" stroke-width="1.2"/><circle cx="472" cy="425" r="6" fill="#ffb18b" stroke="white" stroke-width="4"/></svg>
+                    <figure class="career-counseling__photo">
+                        <img src="assets/images/contact-page/support-advisor.jpg" alt="A career advisor in a headset having an online conversation" width="1536" height="1024" loading="lazy" decoding="async">
+                        <figcaption><span>A little guidance goes a long way</span><p>You don&rsquo;t need all the answers.<br>Just a place to start.</p></figcaption>
+                    </figure>
+                    <div class="career-counseling__note"><span class="career-counseling__note-icon"><i class="ti ti-compass" aria-hidden="true"></i></span><div><small>Your future, in focus</small><p>A plan that starts with you.</p></div></div>
                 </div>
-                <div class="slider-btn mt-6 mt-lg-10 mb-2 px-5 d-center justify-content-center gap-3">
-                    <button type="button" aria-label="Slide Prev" class="ara-prev cmn-btn-cilicon d-center cmn__icon56 cmn__icon56border">
-                        <i class="ti ti-chevron-left fs-five"></i>
-                    </button>
-                    <button type="button" aria-label="Slide Next" class="ara-next cmn-btn-cilicon d-center cmn__icon56">
-                        <i class="ti ti-chevron-right fs-five"></i>
-                    </button>
+                <div class="career-counseling__copy">
+                    <span class="career-counseling__eyebrow section-label">Career Counseling</span>
+                    <h2 id="career-counseling-title" class="career-counseling__title section-heading">Your potential.<br><em>A clearer direction.</em></h2>
+                    <p class="career-counseling__intro">Not sure where to begin, or what comes next? Let&rsquo;s connect your interests, skills, and goals with a practical learning path.</p>
+                    <fieldset class="career-counseling__stages" hidden>
+                        <legend>Where are you in your journey?</legend>
+                        <div class="career-counseling__choices">
+                            <label class="career-counseling__choice"><input type="radio" name="career-stage" value="starting" aria-controls="career-counseling-focus" checked><i class="ti ti-school" aria-hidden="true"></i><span>Starting out</span></label>
+                            <label class="career-counseling__choice"><input type="radio" name="career-stage" value="upskilling" aria-controls="career-counseling-focus"><i class="ti ti-trending-up" aria-hidden="true"></i><span>Upskilling</span></label>
+                            <label class="career-counseling__choice"><input type="radio" name="career-stage" value="switching" aria-controls="career-counseling-focus"><i class="ti ti-route" aria-hidden="true"></i><span>Career switch</span></label>
+                        </div>
+                    </fieldset>
+                    <div id="career-counseling-focus" class="career-counseling__focus" role="status" aria-live="polite" aria-atomic="true">
+                        <span class="career-counseling__focus-label"><i class="ti ti-sparkles" aria-hidden="true"></i>Your counseling focus</span>
+                        <h3 data-career-title>Find a starting point that fits.</h3>
+                        <p class="career-counseling__focus-description" data-career-description>Talk through your interests, explore possible directions, and decide what to learn first.</p>
+                        <ol class="career-counseling__roadmap" aria-label="Your conversation roadmap">
+                            <li><small aria-hidden="true">01</small><span data-career-step>Explore interests</span></li>
+                            <li><small aria-hidden="true">02</small><span data-career-step>Compare paths</span></li>
+                            <li><small aria-hidden="true">03</small><span data-career-step>Pick a first step</span></li>
+                        </ol>
+                    </div>
+                    <div class="career-counseling__actions">
+                        <a class="career-counseling__book" href="https://wa.me/919046240277?text=Hello%20DevOrion%20Academy%21%20I%20would%20like%20to%20discuss%20career%20counseling.%0AMy%20current%20stage%3A%20Starting%20out.%0APlease%20help%20me%20explore%20my%20options%20and%20arrange%20a%20suitable%20time%20to%20talk." data-career-booking target="_blank" rel="noopener noreferrer" aria-label="Book career counseling, opens WhatsApp in a new tab">Book career counseling<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a class="career-counseling__explore" href="#courses">Explore programs<i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="career-counseling__booking-note"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i>Opens a WhatsApp enquiry. Discuss your goals and a suitable time with our team.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- testimonial end -->
+    <!-- career counseling end -->
 
     <nav class="quick-contact" aria-label="Quick contact">
         <a class="quick-contact__button quick-contact__button--call" href="tel:+919046240277" aria-label="Call DevOrion Academy at +91 90462 40277" title="Call us"><i class="ti ti-phone-call" aria-hidden="true"></i></a>
@@ -827,7 +627,6 @@
                         <ul class="site-footer__contacts">
                             <li><span class="site-footer__contact-icon site-footer__contact-icon--phone"><i class="ti ti-phone-filled" aria-hidden="true"></i></span><a href="tel:+919046240277">+91 90462 40277</a></li>
                             <li><span class="site-footer__contact-icon site-footer__contact-icon--email"><i class="ti ti-mail-filled" aria-hidden="true"></i></span><div><a href="mailto:contact@devorionacademy.com">contact@devorionacademy.com</a></div></li>
-                            <li><span class="site-footer__contact-icon site-footer__contact-icon--address"><i class="ti ti-map-pin-filled" aria-hidden="true"></i></span><p>3605 Parker Rd.<br>3890 Poplar Dr.</p></li>
                         </ul>
                     </section>
                     <section class="site-footer__column site-footer__column--social" aria-labelledby="footer-social-title">
@@ -909,7 +708,8 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="assets/js/banner-slider.js"></script>
-    <script src="assets/js/featured-courses.js"></script>
+    <script src="assets/js/mock-interview.js"></script>
+    <script src="assets/js/career-counseling.js"></script>
     <script src="assets/js/scroll-reveal.js"></script>
     <script src="assets/js/enquiry-modal.js"></script>
 

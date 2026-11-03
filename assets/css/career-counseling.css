@@ -1,0 +1,123 @@
+/* Career counseling: a human conversation, with a practical next step. */
+.career-counseling {
+    --career-ink: #182f50;
+    --career-blue: #2865bd;
+    position: relative;
+    padding: 96px 0 90px;
+    overflow: hidden;
+    background: #fff;
+    color: var(--career-ink);
+    scroll-margin-top: 116px;
+}
+.career-counseling *, .career-counseling *::before, .career-counseling *::after { box-sizing: border-box; }
+.career-counseling__layout { display: grid; grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr); align-items: center; gap: clamp(40px, 6vw, 88px); }
+.career-counseling__visual { position: relative; min-width: 0; padding: 17px 26px 34px 0; }
+.career-counseling__orbit { position: absolute; top: -24px; right: -8px; width: 100%; height: calc(100% + 16px); color: #dbe6f7; pointer-events: none; }
+.career-counseling__photo { position: relative; aspect-ratio: .85; margin: 0; overflow: hidden; border: 6px solid #fff; border-radius: 180px 30px 30px 30px; background: #e8eff8; box-shadow: 0 20px 50px -30px rgb(32 64 108 / 32%); }
+.career-counseling__photo::after { position: absolute; inset: 35% 0 0; background: linear-gradient(180deg, transparent 10%, rgb(14 37 67 / 20%) 40%, rgb(14 37 67 / 91%) 100%); content: ''; }
+.career-counseling__photo > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 64% center; }
+.career-counseling__photo figcaption { position: absolute; z-index: 1; right: 30px; bottom: 39px; left: 30px; }
+.career-counseling__photo figcaption > span { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; color: #d5e2f5; font-size: 10px; font-weight: 500; line-height: 1.6; letter-spacing: 1.4px; text-transform: uppercase; }
+.career-counseling__photo figcaption > span::before { width: 17px; height: 2px; background: #ff9a66; content: ''; }
+.career-counseling__photo figcaption > p { max-width: 18ch; margin: 0; color: #fff; font-size: clamp(23px, 2.1vw, 30px); font-weight: 500; line-height: 1.38; letter-spacing: -.6px; }
+.career-counseling__note { position: absolute; z-index: 2; right: 0; bottom: 5px; display: flex; align-items: center; gap: 13px; width: min(335px, 90%); padding: 18px 21px; border: 1px solid #e1e7f0; border-radius: 17px; background: #fff; box-shadow: 0 14px 40px -16px rgb(28 57 97 / 25%); }
+.career-counseling__note-icon { display: grid; flex: 0 0 auto; place-items: center; width: 43px; height: 43px; border: 1px solid #f3dcca; border-radius: 50%; background: #fff3ea; color: #d96b35; font-size: 25px; }
+.career-counseling__note small { display: block; margin-bottom: 5px; color: #78869a; font-size: 9px; font-weight: 500; line-height: 1.5; letter-spacing: 1.2px; text-transform: uppercase; }
+.career-counseling__note p { margin: 0; color: #203957; font-size: 13px; font-weight: 600; line-height: 1.55; }
+.career-counseling__copy { min-width: 0; }
+.career-counseling__eyebrow { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 18px; color: var(--career-blue); }
+.career-counseling__eyebrow::before { width: 28px; height: 3px; border-radius: 9px; background: #f66a34; content: ''; }
+.career-counseling .career-counseling__title { margin: 0 0 19px; color: var(--career-ink); }
+.career-counseling .career-counseling__title em { color: var(--career-blue); }
+.career-counseling__intro { max-width: 47ch; margin: 0 0 25px; color: #687990; font-size: 15px; font-weight: 400; line-height: 1.85; }
+.career-counseling__stages { min-width: 0; margin: 0 0 18px; padding: 0; border: 0; }
+.career-counseling__stages[hidden] { display: none !important; }
+.career-counseling__stages legend { float: none; width: auto; margin: 0 0 12px; padding: 0; color: #344c68; font-size: 12px; font-weight: 600; line-height: 1.6; }
+.career-counseling__choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.career-counseling__choice { position: relative; display: flex; align-items: center; justify-content: center; gap: 7px; min-width: 0; min-height: 47px; margin: 0; padding: 10px 8px; border: 1px solid #e0e7f2; border-radius: 10px; background: #fff; color: #6c7c93; cursor: pointer; transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease; }
+.career-counseling__choice > input { position: absolute; width: 1px; height: 1px; margin: 0; padding: 0; opacity: 0; }
+.career-counseling__choice > i { flex: 0 0 auto; font-size: 19px; }
+.career-counseling__choice > span { color: inherit; font-size: 11px; font-weight: 500; line-height: 1.6; }
+.career-counseling__choice:has(input:checked) { border-color: #abc6ee; background: #edf4ff; color: #2a62ae; box-shadow: inset 0 0 0 1px #d6e5fa; }
+.career-counseling__choice:hover { border-color: #abc6ee; color: #2a62ae; }
+.career-counseling__choice:has(input:focus-visible) { outline: 3px solid #4484e4; outline-offset: 3px; }
+.career-counseling__focus { position: relative; padding: 20px 22px 21px; border: 1px solid #e0e9f6; border-radius: 15px; background: linear-gradient(120deg, #f5f8ff, #fafcff); }
+.career-counseling__focus-label { display: flex; align-items: center; gap: 7px; margin-bottom: 10px; color: #7187a7; font-size: 9px; font-weight: 600; line-height: 1.5; letter-spacing: 1.25px; text-transform: uppercase; }
+.career-counseling__focus-label > i { color: #6388ba; font-size: 15px; }
+.career-counseling .career-counseling__focus h3 { margin: 0 0 8px; color: #223d60; font-family: inherit; font-size: 18px; font-weight: 600; line-height: 1.45; letter-spacing: -.35px; text-transform: none; }
+.career-counseling__focus-description { min-height: 44px; margin: 0 0 17px; color: #6a7b94; font-size: 12px; font-weight: 400; line-height: 1.8; }
+.career-counseling__roadmap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 16px 0 0; border-top: 1px solid #dde7f5; list-style: none; }
+.career-counseling__roadmap > li { position: relative; display: flex; align-items: center; gap: 7px; min-width: 0; margin: 0; padding: 0; }
+.career-counseling__roadmap > li:not(:last-child)::after { position: absolute; top: 7px; right: -9px; width: 5px; height: 5px; border-top: 1px solid #a7bbd8; border-right: 1px solid #a7bbd8; content: ''; transform: rotate(45deg); }
+.career-counseling__roadmap small { display: grid; flex: 0 0 auto; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: #e2ebfa; color: #5a7da9; font-size: 8px; font-weight: 600; line-height: 1; }
+.career-counseling__roadmap > li:last-child small { background: #ffe8d9; color: #bb6335; }
+.career-counseling__roadmap span { color: #536b8c; font-size: 10px; font-weight: 500; line-height: 1.6; }
+.career-counseling__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 23px; margin-top: 23px; }
+.career-counseling__book { display: inline-flex; align-items: center; justify-content: center; gap: 19px; min-height: 52px; padding: 13px 21px; border: 1px solid #ef4813; border-radius: 11px; background: #f4511e; box-shadow: 0 8px 18px rgb(244 81 30 / 13%); color: #fff; font-size: 13px; font-weight: 600; line-height: 1.6; transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease; }
+.career-counseling__book > svg { flex: 0 0 auto; width: 19px; height: 19px; }
+.career-counseling__book:hover { transform: translateY(-2px); background: #dc451a; box-shadow: 0 12px 24px rgb(244 81 30 / 19%); color: #fff; }
+.career-counseling__explore { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; color: #405572; font-size: 12px; font-weight: 600; }
+.career-counseling__explore > i { font-size: 17px; }
+.career-counseling__explore:hover { color: var(--career-blue); }
+.career-counseling__booking-note { display: flex; align-items: flex-start; gap: 6px; max-width: 50ch; margin: 13px 0 0; color: #7a879a; font-size: 10px; font-weight: 400; line-height: 1.8; }
+.career-counseling__booking-note > i { flex: 0 0 auto; margin-top: 2px; color: #6c8c7c; font-size: 13px; }
+.career-counseling a:focus-visible { outline: 3px solid #4484e4; outline-offset: 5px; }
+@media (max-width: 1199px) {
+    .career-counseling { padding: 74px 0 70px; }
+    .career-counseling__layout { gap: 37px; }
+    .career-counseling__visual { padding-right: 15px; }
+    .career-counseling__photo { aspect-ratio: .78; border-radius: 145px 26px 26px 26px; }
+    .career-counseling__photo figcaption { right: 23px; left: 23px; }
+    .career-counseling__intro { font-size: 14px; }
+    .career-counseling__choice { gap: 5px; padding: 9px 5px; }
+    .career-counseling__choice > span { font-size: 10px; }
+    .career-counseling__focus { padding: 18px; }
+    .career-counseling__roadmap { gap: 12px; }
+    .career-counseling__roadmap > li { align-items: flex-start; gap: 5px; }
+}
+@media (max-width: 991px) {
+    .career-counseling__layout { grid-template-columns: minmax(0, 1fr); gap: 43px; }
+    .career-counseling__visual { width: min(100%, 560px); margin: 0 auto; padding-right: 24px; }
+    .career-counseling__photo { aspect-ratio: 1.05; border-radius: 150px 28px 28px 28px; }
+    .career-counseling__photo > img { object-position: 64% 40%; }
+    .career-counseling__copy { max-width: 650px; }
+    .career-counseling__intro { max-width: 57ch; }
+    .career-counseling__choice { min-height: 48px; gap: 8px; }
+    .career-counseling__choice > span { font-size: 12px; }
+    .career-counseling__focus-description { min-height: 0; }
+    .career-counseling__roadmap > li { align-items: center; gap: 8px; }
+    .career-counseling__roadmap span { font-size: 11px; }
+}
+@media (max-width: 575px) {
+    .career-counseling { padding: 55px 0 49px; }
+    .career-counseling > .container { width: calc(100% - 40px); padding: 0; }
+    .career-counseling__layout { gap: 34px; }
+    .career-counseling__visual { padding: 8px 13px 31px 0; }
+    .career-counseling__photo { aspect-ratio: .88; border-width: 4px; border-radius: 115px 20px 20px 20px; }
+    .career-counseling__photo figcaption { right: 19px; bottom: 38px; left: 19px; }
+    .career-counseling__photo figcaption > span { margin-bottom: 8px; font-size: 8px; letter-spacing: .8px; }
+    .career-counseling__photo figcaption > p { font-size: 23px; }
+    .career-counseling__note { bottom: 0; gap: 10px; width: 90%; padding: 13px; border-radius: 13px; }
+    .career-counseling__note-icon { width: 36px; height: 36px; font-size: 21px; }
+    .career-counseling__note small { margin-bottom: 3px; font-size: 8px; letter-spacing: .6px; }
+    .career-counseling__note p { font-size: 11px; }
+    .career-counseling__eyebrow { gap: 10px; margin-bottom: 15px; }
+    .career-counseling .career-counseling__title { margin-bottom: 15px; }
+    .career-counseling__intro { margin-bottom: 22px; font-size: 13px; line-height: 1.8; }
+    .career-counseling__stages legend { font-size: 11px; }
+    .career-counseling__choices { gap: 6px; }
+    .career-counseling__choice { flex-direction: column; gap: 4px; padding: 10px 4px; border-radius: 9px; }
+    .career-counseling__choice > span { font-size: 10px; }
+    .career-counseling__focus { padding: 17px 15px; border-radius: 12px; }
+    .career-counseling .career-counseling__focus h3 { font-size: 17px; }
+    .career-counseling__focus-description { font-size: 12px; }
+    .career-counseling__roadmap { grid-template-columns: 1fr; gap: 11px; padding-top: 14px; }
+    .career-counseling__roadmap > li:not(:last-child)::after { display: none; }
+    .career-counseling__roadmap span { font-size: 11px; }
+    .career-counseling__actions { gap: 10px 19px; margin-top: 21px; }
+    .career-counseling__book { min-height: 49px; gap: 17px; padding: 12px 17px; font-size: 12px; }
+    .career-counseling__explore { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .career-counseling *, .career-counseling *::before, .career-counseling *::after { transition: none !important; }
+}
